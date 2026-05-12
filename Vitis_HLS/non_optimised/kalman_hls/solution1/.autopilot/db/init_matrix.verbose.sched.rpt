@@ -1,0 +1,211 @@
+
+
+================================================================
+== Vitis HLS Report for 'init_matrix'
+================================================================
+* Date:           Wed Apr 29 02:01:14 2026
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        kalman_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.730 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        7|        7|  70.000 ns|  70.000 ns|    8|    8|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 8, depth = 8
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 1
+  Pipeline-0 : II = 8, D = 8, States = { 1 2 3 4 5 6 7 8 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.73>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%m_data_addr = getelementptr i32 %m_data, i64 0, i64 0" [matrix.cpp:17]   --->   Operation 9 'getelementptr' 'm_data_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%m_data_addr_1 = getelementptr i32 %m_data, i64 0, i64 1" [matrix.cpp:17]   --->   Operation 10 'getelementptr' 'm_data_addr_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr" [matrix.cpp:17]   --->   Operation 11 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_1 : Operation 12 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_1" [matrix.cpp:17]   --->   Operation 12 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 2 <SV = 1> <Delay = 0.73>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%m_data_addr_2 = getelementptr i32 %m_data, i64 0, i64 2" [matrix.cpp:17]   --->   Operation 13 'getelementptr' 'm_data_addr_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%m_data_addr_3 = getelementptr i32 %m_data, i64 0, i64 3" [matrix.cpp:17]   --->   Operation 14 'getelementptr' 'm_data_addr_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_2" [matrix.cpp:17]   --->   Operation 15 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 16 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_3" [matrix.cpp:17]   --->   Operation 16 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 3 <SV = 2> <Delay = 0.73>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%m_data_addr_4 = getelementptr i32 %m_data, i64 0, i64 4" [matrix.cpp:17]   --->   Operation 17 'getelementptr' 'm_data_addr_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%m_data_addr_5 = getelementptr i32 %m_data, i64 0, i64 5" [matrix.cpp:17]   --->   Operation 18 'getelementptr' 'm_data_addr_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_4" [matrix.cpp:17]   --->   Operation 19 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_3 : Operation 20 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_5" [matrix.cpp:17]   --->   Operation 20 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 4 <SV = 3> <Delay = 0.73>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%m_data_addr_6 = getelementptr i32 %m_data, i64 0, i64 6" [matrix.cpp:17]   --->   Operation 21 'getelementptr' 'm_data_addr_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%m_data_addr_7 = getelementptr i32 %m_data, i64 0, i64 7" [matrix.cpp:17]   --->   Operation 22 'getelementptr' 'm_data_addr_7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_6" [matrix.cpp:17]   --->   Operation 23 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_4 : Operation 24 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_7" [matrix.cpp:17]   --->   Operation 24 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 5 <SV = 4> <Delay = 0.73>
+ST_5 : Operation 25 [1/1] (0.00ns)   --->   "%m_data_addr_8 = getelementptr i32 %m_data, i64 0, i64 8" [matrix.cpp:17]   --->   Operation 25 'getelementptr' 'm_data_addr_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%m_data_addr_9 = getelementptr i32 %m_data, i64 0, i64 9" [matrix.cpp:17]   --->   Operation 26 'getelementptr' 'm_data_addr_9' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 27 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_8" [matrix.cpp:17]   --->   Operation 27 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_5 : Operation 28 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_9" [matrix.cpp:17]   --->   Operation 28 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 6 <SV = 5> <Delay = 0.73>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%m_data_addr_10 = getelementptr i32 %m_data, i64 0, i64 10" [matrix.cpp:17]   --->   Operation 29 'getelementptr' 'm_data_addr_10' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%m_data_addr_11 = getelementptr i32 %m_data, i64 0, i64 11" [matrix.cpp:17]   --->   Operation 30 'getelementptr' 'm_data_addr_11' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_10" [matrix.cpp:17]   --->   Operation 31 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_6 : Operation 32 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_11" [matrix.cpp:17]   --->   Operation 32 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 7 <SV = 6> <Delay = 0.73>
+ST_7 : Operation 33 [1/1] (0.00ns)   --->   "%m_data_addr_12 = getelementptr i32 %m_data, i64 0, i64 12" [matrix.cpp:17]   --->   Operation 33 'getelementptr' 'm_data_addr_12' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 34 [1/1] (0.00ns)   --->   "%m_data_addr_13 = getelementptr i32 %m_data, i64 0, i64 13" [matrix.cpp:17]   --->   Operation 34 'getelementptr' 'm_data_addr_13' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 35 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_12" [matrix.cpp:17]   --->   Operation 35 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_7 : Operation 36 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_13" [matrix.cpp:17]   --->   Operation 36 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+
+State 8 <SV = 7> <Delay = 0.73>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%m_cols_write_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %m_cols_write" [matrix.cpp:17]   --->   Operation 37 'read' 'm_cols_write_read' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%m_rows_write_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %m_rows_write" [matrix.cpp:17]   --->   Operation 38 'read' 'm_rows_write_read' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%m_data_addr_14 = getelementptr i32 %m_data, i64 0, i64 14" [matrix.cpp:17]   --->   Operation 39 'getelementptr' 'm_data_addr_14' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%m_data_addr_15 = getelementptr i32 %m_data, i64 0, i64 15" [matrix.cpp:17]   --->   Operation 40 'getelementptr' 'm_data_addr_15' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%m_cols_write_cast = zext i2 %m_cols_write_read" [matrix.cpp:17]   --->   Operation 41 'zext' 'm_cols_write_cast' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%m_rows_write_cast = zext i2 %m_rows_write_read" [matrix.cpp:17]   --->   Operation 42 'zext' 'm_rows_write_cast' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_14" [matrix.cpp:17]   --->   Operation 43 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_8 : Operation 44 [1/1] (0.73ns)   --->   "%store_ln17 = store i32 0, i4 %m_data_addr_15" [matrix.cpp:17]   --->   Operation 44 'store' 'store_ln17' <Predicate = true> <Delay = 0.73> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%mrv = insertvalue i64 <undef>, i32 %m_rows_write_cast" [matrix.cpp:20]   --->   Operation 45 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i64 %mrv, i32 %m_cols_write_cast" [matrix.cpp:20]   --->   Operation 46 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%ret_ln20 = ret i64 %mrv_1" [matrix.cpp:20]   --->   Operation 47 'ret' 'ret_ln20' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.73ns
+The critical path consists of the following:
+	'getelementptr' operation ('m_data_addr', matrix.cpp:17) [6]  (0 ns)
+	'store' operation ('store_ln17', matrix.cpp:17) of constant 0 on array 'm_data' [24]  (0.73 ns)
+
+ <State 2>: 0.73ns
+The critical path consists of the following:
+	'getelementptr' operation ('m_data_addr_2', matrix.cpp:17) [8]  (0 ns)
+	'store' operation ('store_ln17', matrix.cpp:17) of constant 0 on array 'm_data' [26]  (0.73 ns)
+
+ <State 3>: 0.73ns
+The critical path consists of the following:
+	'getelementptr' operation ('m_data_addr_4', matrix.cpp:17) [10]  (0 ns)
+	'store' operation ('store_ln17', matrix.cpp:17) of constant 0 on array 'm_data' [28]  (0.73 ns)
+
+ <State 4>: 0.73ns
+The critical path consists of the following:
+	'getelementptr' operation ('m_data_addr_6', matrix.cpp:17) [12]  (0 ns)
+	'store' operation ('store_ln17', matrix.cpp:17) of constant 0 on array 'm_data' [30]  (0.73 ns)
+
+ <State 5>: 0.73ns
+The critical path consists of the following:
+	'getelementptr' operation ('m_data_addr_8', matrix.cpp:17) [14]  (0 ns)
+	'store' operation ('store_ln17', matrix.cpp:17) of constant 0 on array 'm_data' [32]  (0.73 ns)
+
+ <State 6>: 0.73ns
+The critical path consists of the following:
+	'getelementptr' operation ('m_data_addr_10', matrix.cpp:17) [16]  (0 ns)
+	'store' operation ('store_ln17', matrix.cpp:17) of constant 0 on array 'm_data' [34]  (0.73 ns)
+
+ <State 7>: 0.73ns
+The critical path consists of the following:
+	'getelementptr' operation ('m_data_addr_12', matrix.cpp:17) [18]  (0 ns)
+	'store' operation ('store_ln17', matrix.cpp:17) of constant 0 on array 'm_data' [36]  (0.73 ns)
+
+ <State 8>: 0.73ns
+The critical path consists of the following:
+	'getelementptr' operation ('m_data_addr_14', matrix.cpp:17) [20]  (0 ns)
+	'store' operation ('store_ln17', matrix.cpp:17) of constant 0 on array 'm_data' [38]  (0.73 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

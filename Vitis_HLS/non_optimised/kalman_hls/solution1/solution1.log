@@ -1,0 +1,448 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.119 seconds; current allocated memory: 191.608 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 191.559 MB.
+INFO: [HLS 200-10] Analyzing design file 'matrix.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'kalman.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 12.472 seconds; current allocated memory: 193.408 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:541:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:183:59)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'init_matrix(Matrix*, int, int)' (matrix.cpp:17:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1463:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1463:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:746:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:746:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:556:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:570:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:570:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:563:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:563:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'set_identity_matrix(Matrix*)' (matrix.cpp:50:29)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'set_identity_matrix(Matrix*)' (matrix.cpp:50:43)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<64, 32, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::mult ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1119:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::mult ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1210:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1210:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'scale_matrix(Matrix*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' (matrix.cpp:178:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 32, true>::plus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<65, 33, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 32, true>::plus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 32, true>::plus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 32, true>::plus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1212:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1212:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'multiply_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:122:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'multiply_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:125:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::mult ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'multiply_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:125:33)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'multiply_by_transpose_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:140:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'multiply_by_transpose_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:143:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::mult ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'multiply_by_transpose_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:143:33)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::plus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<33, 17, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::plus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::plus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::plus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'add_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:84:32)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'add_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:84:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::minus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator-<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1193:332)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<33, 17, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::minus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator-<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1193:384)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::minus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator-<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1193:344)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::minus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator-<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'subtract_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:97:32)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'subtract_matrix(Matrix*, Matrix*, Matrix*)' (matrix.cpp:97:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::div ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator/<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1144:97)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<49, 33, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::div ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator/<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1177:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'scale_row(Matrix*, int, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' (matrix.cpp:195:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1252:47)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::mult ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'shear_row(Matrix*, int, int, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' (matrix.cpp:203:27)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'shear_row(Matrix*, int, int, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' (matrix.cpp:203:17)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:215:27)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator==<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:215:24)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:219:27)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:237:30)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator-() const' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:237:30)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!=<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:219:24)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:229:27)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::div ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator/<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:229:41)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:229:27)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'subtract_from_identity_matrix(Matrix*)' (matrix.cpp:108:33)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'subtract_from_identity_matrix(Matrix*)' (matrix.cpp:110:33)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::minus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator-<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'subtract_from_identity_matrix(Matrix*)' (matrix.cpp:110:45)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'subtract_from_identity_matrix(Matrix*)' (matrix.cpp:110:33)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'subtract_from_identity_matrix(Matrix*)' (matrix.cpp:108:33)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::minus ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator-<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'subtract_from_identity_matrix(Matrix*)' (matrix.cpp:108:45)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:57:53)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:57:68)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:57:83)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:57:98)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:58:54)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:58:69)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:63:30)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:64:51)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::mult ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:64:64)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:64:51)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:64:77)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 16, true>::mult ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:66:64)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:66:54)
+INFO: [HLS 214-178] Inlining function 'multiply_matrix(Matrix*, Matrix*, Matrix*)' into 'predict(KalmanFilter*)' (kalman.cpp:85:0)
+INFO: [HLS 214-178] Inlining function 'multiply_by_transpose_matrix(Matrix*, Matrix*, Matrix*)' into 'predict(KalmanFilter*)' (kalman.cpp:85:0)
+INFO: [HLS 214-178] Inlining function 'add_matrix(Matrix*, Matrix*, Matrix*)' into 'predict(KalmanFilter*)' (kalman.cpp:85:0)
+INFO: [HLS 214-178] Inlining function 'set_identity_matrix(Matrix*)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:207:0)
+INFO: [HLS 214-178] Inlining function 'swap_rows(Matrix*, int, int)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:207:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:207:0)
+INFO: [HLS 214-178] Inlining function 'scale_row(Matrix*, int, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:207:0)
+INFO: [HLS 214-178] Inlining function 'shear_row(Matrix*, int, int, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'destructive_invert_matrix(Matrix*, Matrix*)' (matrix.cpp:207:0)
+INFO: [HLS 214-178] Inlining function 'subtract_matrix(Matrix*, Matrix*, Matrix*)' into 'estimate(KalmanFilter*)' (kalman.cpp:102:0)
+INFO: [HLS 214-178] Inlining function 'multiply_by_transpose_matrix(Matrix*, Matrix*, Matrix*)' into 'estimate(KalmanFilter*)' (kalman.cpp:102:0)
+INFO: [HLS 214-178] Inlining function 'add_matrix(Matrix*, Matrix*, Matrix*)' into 'estimate(KalmanFilter*)' (kalman.cpp:102:0)
+INFO: [HLS 214-178] Inlining function 'subtract_from_identity_matrix(Matrix*)' into 'estimate(KalmanFilter*)' (kalman.cpp:102:0)
+INFO: [HLS 214-178] Inlining function 'init_kalman_filter(KalmanFilter*, int, int)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:46:0)
+INFO: [HLS 214-178] Inlining function 'set_matrix_2x2(Matrix*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:46:0)
+INFO: [HLS 214-178] Inlining function 'set_matrix_1x2(Matrix*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:46:0)
+INFO: [HLS 214-178] Inlining function 'set_identity_matrix(Matrix*)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:46:0)
+INFO: [HLS 214-178] Inlining function 'set_matrix_2x1(Matrix*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:46:0)
+INFO: [HLS 214-178] Inlining function 'scale_matrix(Matrix*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:46:0)
+INFO: [HLS 214-178] Inlining function 'set_matrix_1x1(Matrix*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:46:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:25:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:25:38)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:26:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:26:38)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:35:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:36:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:30:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:31:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (matrix.cpp:40:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (kalman.cpp:80:14)
+WARNING: [HLS 214-167] The program may have out of bound array access (kalman.cpp:81:14)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:80:14)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'kalman_hw_update(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (kalman.cpp:81:14)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 14.975 seconds; current allocated memory: 198.094 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 198.095 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.763 seconds; current allocated memory: 216.295 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.616 seconds; current allocated memory: 242.789 MB.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'est_pos' (kalman.cpp:46) as it is incompatible with its interface mode 's_axilite'.
+WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'est_vel' (kalman.cpp:46) as it is incompatible with its interface mode 's_axilite'.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'predict' (matrix.cpp:80:61).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'multiply_matrix' (matrix.cpp:118:61).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'kalman_hw_update' (kalman.cpp:46).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'init_matrix' (matrix.cpp:11).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'estimate' (matrix.cpp:80:50).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'destructive_invert_matrix' (matrix.cpp:46:53).
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_118_1' (matrix.cpp:118) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_120_2' (matrix.cpp:120) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_123_3' (matrix.cpp:123) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_118_1' (matrix.cpp:118) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_120_2' (matrix.cpp:120) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_123_3' (matrix.cpp:123) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_136_1' (matrix.cpp:136) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_138_2' (matrix.cpp:138) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_141_3' (matrix.cpp:141) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_80_1' (matrix.cpp:82) in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_82_2' in function 'predict': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_118_1' (matrix.cpp:118) in function 'multiply_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_120_2' (matrix.cpp:120) in function 'multiply_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_123_3' (matrix.cpp:123) in function 'multiply_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_46_1' (matrix.cpp:46) in function 'kalman_hw_update': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_48_2' (matrix.cpp:48) in function 'kalman_hw_update': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_46_1' (matrix.cpp:46) in function 'kalman_hw_update': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_48_2' (matrix.cpp:48) in function 'kalman_hw_update': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_46_1' (matrix.cpp:46) in function 'kalman_hw_update': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_48_2' (matrix.cpp:48) in function 'kalman_hw_update': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_174_1' (matrix.cpp:174) in function 'kalman_hw_update': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_176_2' (matrix.cpp:176) in function 'kalman_hw_update': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_15_1' (matrix.cpp:15) in function 'init_matrix' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_16_2' (matrix.cpp:16) in function 'init_matrix' completely with a factor of 4.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_93_1' (matrix.cpp:93) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_95_2' (matrix.cpp:95) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_136_1' (matrix.cpp:136) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_138_2' (matrix.cpp:138) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_141_3' (matrix.cpp:141) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_80_1' (matrix.cpp:82) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_82_2' in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_80_1' (matrix.cpp:82) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_82_2' in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_103_1' (matrix.cpp:103) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_105_2' (matrix.cpp:105) in function 'estimate': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_46_1' (matrix.cpp:46) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_48_2' (matrix.cpp:48) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_213_1' (matrix.cpp:213) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_217_2' (matrix.cpp:216) in function 'destructive_invert_matrix' completely: variable loop bound.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_184_1' (matrix.cpp:184) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_184_1' (matrix.cpp:184) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_193_1' (matrix.cpp:193) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_193_1' (matrix.cpp:193) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_233_3' (matrix.cpp:233) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_201_1' (matrix.cpp:201) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+WARNING: [HLS 200-936] Cannot unroll loop 'VITIS_LOOP_201_1' (matrix.cpp:201) in function 'destructive_invert_matrix': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.8 seconds; current allocated memory: 292.393 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.predicted_state.data.V' (matrix.cpp:122:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.predicted_state.data.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.predicted_estimate_covariance.data.V' (matrix.cpp:140:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.predicted_estimate_covariance.data.V' (matrix.cpp:84:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'c_data' (matrix.cpp:122:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'c_data' 
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.state_transition.data.V' (matrix.cpp:25:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.state_transition.data.V' (matrix.cpp:25:38)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.state_transition.data.V' (matrix.cpp:26:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.state_transition.data.V' (matrix.cpp:26:38)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.observation_model.data.V' (matrix.cpp:35:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.observation_model.data.V' (matrix.cpp:36:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.process_noise_covariance.data.V' (matrix.cpp:50:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.state_estimate.data.V' (matrix.cpp:30:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.state_estimate.data.V' (matrix.cpp:31:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.estimate_covariance.data.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.observation.data.V' (matrix.cpp:40:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'm_data' (matrix.cpp:17:27)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.innovation.data.V' (matrix.cpp:97:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.vertical_scratch.data.V' (matrix.cpp:140:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.vertical_scratch.data.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.innovation_covariance.data.V' (matrix.cpp:84:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.big_square_scratch.data.V' (matrix.cpp:108:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.big_square_scratch.data.V' (matrix.cpp:110:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.inverse_innovation_covariance.data.V' (matrix.cpp:50:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.innovation_covariance.data.V' (matrix.cpp:187:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.innovation_covariance.data.V' (matrix.cpp:188:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.innovation_covariance.data.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'hw_filter.innovation_covariance.data.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.242 seconds; current allocated memory: 349.718 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kalman_hw_update' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'init_matrix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'init_matrix'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('m_data_addr_2_write_ln17', matrix.cpp:17) of constant 0 on array 'm_data' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'm_data'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 8, Depth = 8, function 'init_matrix'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.554 seconds; current allocated memory: 350.048 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.351 seconds; current allocated memory: 350.182 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'predict' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'predict': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.522 seconds; current allocated memory: 350.735 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.489 seconds; current allocated memory: 351.322 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'multiply_matrix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'multiply_matrix': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.578 seconds; current allocated memory: 351.502 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.364 seconds; current allocated memory: 351.763 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'destructive_invert_matrix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'destructive_invert_matrix': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.601 seconds; current allocated memory: 352.449 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.746 seconds; current allocated memory: 353.154 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'estimate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'estimate': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.815 seconds; current allocated memory: 353.741 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.58 seconds; current allocated memory: 354.380 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_hw_update' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'kalman_hw_update': contains subloop(s) that are not unrolled.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'kalman_hw_update': contains subloop(s) that are not unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.789 seconds; current allocated memory: 355.012 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.803 seconds; current allocated memory: 355.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'init_matrix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'init_matrix'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.739 seconds; current allocated memory: 356.099 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'predict' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_48_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'predict'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.483 seconds; current allocated memory: 357.612 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'multiply_matrix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'multiply_matrix'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.22 seconds; current allocated memory: 360.463 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'destructive_invert_matrix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_48_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_34ns_32s_32_38_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'destructive_invert_matrix'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.629 seconds; current allocated memory: 362.700 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'estimate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'estimate'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.265 seconds; current allocated memory: 366.827 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_hw_update' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kalman_hw_update/obs_pos' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kalman_hw_update/est_pos' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kalman_hw_update/est_vel' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kalman_hw_update' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'is_initialized' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_timestep' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_state_transition_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_state_transition_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_observation_model_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_observation_model_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_observation_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_observation_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_predicted_state_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_predicted_estimate_covariance_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_predicted_estimate_covariance_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_innovation_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_innovation_covariance_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_innovation_covariance_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_inverse_innovation_covariance_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_optimal_gain_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_optimal_gain_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_state_estimate_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_estimate_covariance_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_estimate_covariance_cols' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_vertical_scratch_rows' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hw_filter_vertical_scratch_cols' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'obs_pos', 'est_pos', 'est_vel' and 'return' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32ns_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_hw_update'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.605 seconds; current allocated memory: 372.153 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'kalman_hw_update_mul_32s_32s_48_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'kalman_hw_update_sdiv_34ns_32s_32_38_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'kalman_hw_update_mul_32s_32ns_48_1_1_Multiplier_1'
+INFO: [RTMG 210-278] Implementing memory 'kalman_hw_update_hw_filter_state_transition_data_V_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'kalman_hw_update_hw_filter_innovation_covariance_data_V_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'kalman_hw_update_hw_filter_small_square_scratch_data_V_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 7.751 seconds; current allocated memory: 380.748 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for kalman_hw_update.
+INFO: [VLOG 209-307] Generating Verilog RTL for kalman_hw_update.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 150.55 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 20 seconds. CPU system time: 6 seconds. Elapsed time: 57.936 seconds; current allocated memory: 381.903 MB.
+INFO: [HLS 200-112] Total CPU user time: 25 seconds. Total CPU system time: 8 seconds. Total elapsed time: 61.949 seconds; peak allocated memory: 380.748 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 51.676 seconds; current allocated memory: 197.683 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file kalman_hls/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 16.826 seconds; current allocated memory: 199.546 MB.

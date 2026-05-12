@@ -1,0 +1,333 @@
+
+
+================================================================
+== Vitis HLS Report for 'init_kalman_filter'
+================================================================
+* Date:           Wed May  6 18:38:16 2026
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        kalman_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.730 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        7|        7|  70.000 ns|  70.000 ns|    8|    8|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        -|        -|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|     1519|    -|
+|Register             |        -|     -|        8|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|        8|     1519|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3072|   864000|   432000|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9216|  2592000|  1296000|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +---------------------------------------------------------+----+-----------+-----+-----------+
+    |                           Name                          | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                                |  49|          9|    1|          9|
+    |hw_filter_big_square_scratch_data_V_address0             |  49|          9|    4|         36|
+    |hw_filter_big_square_scratch_data_V_address1             |  49|          9|    4|         36|
+    |hw_filter_estimate_covariance_data_V_address0            |  49|          9|    4|         36|
+    |hw_filter_estimate_covariance_data_V_address1            |  49|          9|    4|         36|
+    |hw_filter_innovation_covariance_data_V_address0          |  49|          9|    4|         36|
+    |hw_filter_innovation_covariance_data_V_address1          |  49|          9|    4|         36|
+    |hw_filter_innovation_data_V_address0                     |  49|          9|    4|         36|
+    |hw_filter_innovation_data_V_address1                     |  49|          9|    4|         36|
+    |hw_filter_inverse_innovation_covariance_data_V_address0  |  49|          9|    4|         36|
+    |hw_filter_inverse_innovation_covariance_data_V_address1  |  49|          9|    4|         36|
+    |hw_filter_observation_data_V_address0                    |  49|          9|    4|         36|
+    |hw_filter_observation_data_V_address1                    |  49|          9|    4|         36|
+    |hw_filter_observation_model_data_V_address0              |  49|          9|    4|         36|
+    |hw_filter_observation_model_data_V_address1              |  49|          9|    4|         36|
+    |hw_filter_observation_noise_covariance_data_V_address0   |  49|          9|    4|         36|
+    |hw_filter_observation_noise_covariance_data_V_address1   |  49|          9|    4|         36|
+    |hw_filter_optimal_gain_data_V_address0                   |  49|          9|    4|         36|
+    |hw_filter_optimal_gain_data_V_address1                   |  49|          9|    4|         36|
+    |hw_filter_predicted_estimate_covariance_data_V_address0  |  49|          9|    4|         36|
+    |hw_filter_predicted_estimate_covariance_data_V_address1  |  49|          9|    4|         36|
+    |hw_filter_predicted_state_data_V_address0                |  49|          9|    4|         36|
+    |hw_filter_predicted_state_data_V_address1                |  49|          9|    4|         36|
+    |hw_filter_process_noise_covariance_data_V_address0       |  49|          9|    4|         36|
+    |hw_filter_process_noise_covariance_data_V_address1       |  49|          9|    4|         36|
+    |hw_filter_state_estimate_data_V_address0                 |  49|          9|    4|         36|
+    |hw_filter_state_estimate_data_V_address1                 |  49|          9|    4|         36|
+    |hw_filter_state_transition_data_V_address0               |  49|          9|    4|         36|
+    |hw_filter_state_transition_data_V_address1               |  49|          9|    4|         36|
+    |hw_filter_vertical_scratch_data_V_address0               |  49|          9|    4|         36|
+    |hw_filter_vertical_scratch_data_V_address1               |  49|          9|    4|         36|
+    +---------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                    |1519|        279|  121|       1089|
+    +---------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+---+----+-----+-----------+
+    |    Name   | FF| LUT| Bits| Const Bits|
+    +-----------+---+----+-----+-----------+
+    |ap_CS_fsm  |  8|   0|    8|          0|
+    +-----------+---+----+-----+-----------+
+    |Total      |  8|   0|    8|          0|
+    +-----------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+|                        RTL Ports                        | Dir | Bits|  Protocol  |                  Source Object                 |    C Type    |
++---------------------------------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+|ap_clk                                                   |   in|    1|  ap_ctrl_hs|                              init_kalman_filter|  return value|
+|ap_rst                                                   |   in|    1|  ap_ctrl_hs|                              init_kalman_filter|  return value|
+|ap_start                                                 |   in|    1|  ap_ctrl_hs|                              init_kalman_filter|  return value|
+|ap_done                                                  |  out|    1|  ap_ctrl_hs|                              init_kalman_filter|  return value|
+|ap_idle                                                  |  out|    1|  ap_ctrl_hs|                              init_kalman_filter|  return value|
+|ap_ready                                                 |  out|    1|  ap_ctrl_hs|                              init_kalman_filter|  return value|
+|ap_ce                                                    |   in|    1|  ap_ctrl_hs|                              init_kalman_filter|  return value|
+|hw_filter_timestep                                       |  out|   32|      ap_vld|                              hw_filter_timestep|       pointer|
+|hw_filter_timestep_ap_vld                                |  out|    1|      ap_vld|                              hw_filter_timestep|       pointer|
+|hw_filter_state_transition_rows                          |  out|    2|      ap_vld|                 hw_filter_state_transition_rows|       pointer|
+|hw_filter_state_transition_rows_ap_vld                   |  out|    1|      ap_vld|                 hw_filter_state_transition_rows|       pointer|
+|hw_filter_state_transition_cols                          |  out|    2|      ap_vld|                 hw_filter_state_transition_cols|       pointer|
+|hw_filter_state_transition_cols_ap_vld                   |  out|    1|      ap_vld|                 hw_filter_state_transition_cols|       pointer|
+|hw_filter_observation_model_rows                         |  out|    1|      ap_vld|                hw_filter_observation_model_rows|       pointer|
+|hw_filter_observation_model_rows_ap_vld                  |  out|    1|      ap_vld|                hw_filter_observation_model_rows|       pointer|
+|hw_filter_observation_model_cols                         |  out|    2|      ap_vld|                hw_filter_observation_model_cols|       pointer|
+|hw_filter_observation_model_cols_ap_vld                  |  out|    1|      ap_vld|                hw_filter_observation_model_cols|       pointer|
+|hw_filter_process_noise_covariance_rows                  |  out|    2|      ap_vld|         hw_filter_process_noise_covariance_rows|       pointer|
+|hw_filter_process_noise_covariance_rows_ap_vld           |  out|    1|      ap_vld|         hw_filter_process_noise_covariance_rows|       pointer|
+|hw_filter_process_noise_covariance_cols                  |  out|    2|      ap_vld|         hw_filter_process_noise_covariance_cols|       pointer|
+|hw_filter_process_noise_covariance_cols_ap_vld           |  out|    1|      ap_vld|         hw_filter_process_noise_covariance_cols|       pointer|
+|hw_filter_observation_noise_covariance_rows              |  out|    1|      ap_vld|     hw_filter_observation_noise_covariance_rows|       pointer|
+|hw_filter_observation_noise_covariance_rows_ap_vld       |  out|    1|      ap_vld|     hw_filter_observation_noise_covariance_rows|       pointer|
+|hw_filter_observation_noise_covariance_cols              |  out|    1|      ap_vld|     hw_filter_observation_noise_covariance_cols|       pointer|
+|hw_filter_observation_noise_covariance_cols_ap_vld       |  out|    1|      ap_vld|     hw_filter_observation_noise_covariance_cols|       pointer|
+|hw_filter_observation_rows                               |  out|    1|      ap_vld|                      hw_filter_observation_rows|       pointer|
+|hw_filter_observation_rows_ap_vld                        |  out|    1|      ap_vld|                      hw_filter_observation_rows|       pointer|
+|hw_filter_observation_cols                               |  out|    1|      ap_vld|                      hw_filter_observation_cols|       pointer|
+|hw_filter_observation_cols_ap_vld                        |  out|    1|      ap_vld|                      hw_filter_observation_cols|       pointer|
+|hw_filter_predicted_state_rows                           |  out|    2|      ap_vld|                  hw_filter_predicted_state_rows|       pointer|
+|hw_filter_predicted_state_rows_ap_vld                    |  out|    1|      ap_vld|                  hw_filter_predicted_state_rows|       pointer|
+|hw_filter_predicted_state_cols                           |  out|    1|      ap_vld|                  hw_filter_predicted_state_cols|       pointer|
+|hw_filter_predicted_state_cols_ap_vld                    |  out|    1|      ap_vld|                  hw_filter_predicted_state_cols|       pointer|
+|hw_filter_predicted_estimate_covariance_rows             |  out|    2|      ap_vld|    hw_filter_predicted_estimate_covariance_rows|       pointer|
+|hw_filter_predicted_estimate_covariance_rows_ap_vld      |  out|    1|      ap_vld|    hw_filter_predicted_estimate_covariance_rows|       pointer|
+|hw_filter_predicted_estimate_covariance_cols             |  out|    2|      ap_vld|    hw_filter_predicted_estimate_covariance_cols|       pointer|
+|hw_filter_predicted_estimate_covariance_cols_ap_vld      |  out|    1|      ap_vld|    hw_filter_predicted_estimate_covariance_cols|       pointer|
+|hw_filter_innovation_rows                                |  out|    1|      ap_vld|                       hw_filter_innovation_rows|       pointer|
+|hw_filter_innovation_rows_ap_vld                         |  out|    1|      ap_vld|                       hw_filter_innovation_rows|       pointer|
+|hw_filter_innovation_cols                                |  out|    1|      ap_vld|                       hw_filter_innovation_cols|       pointer|
+|hw_filter_innovation_cols_ap_vld                         |  out|    1|      ap_vld|                       hw_filter_innovation_cols|       pointer|
+|hw_filter_innovation_covariance_rows                     |  out|    1|      ap_vld|            hw_filter_innovation_covariance_rows|       pointer|
+|hw_filter_innovation_covariance_rows_ap_vld              |  out|    1|      ap_vld|            hw_filter_innovation_covariance_rows|       pointer|
+|hw_filter_innovation_covariance_cols                     |  out|    1|      ap_vld|            hw_filter_innovation_covariance_cols|       pointer|
+|hw_filter_innovation_covariance_cols_ap_vld              |  out|    1|      ap_vld|            hw_filter_innovation_covariance_cols|       pointer|
+|hw_filter_inverse_innovation_covariance_rows             |  out|    1|      ap_vld|    hw_filter_inverse_innovation_covariance_rows|       pointer|
+|hw_filter_inverse_innovation_covariance_rows_ap_vld      |  out|    1|      ap_vld|    hw_filter_inverse_innovation_covariance_rows|       pointer|
+|hw_filter_inverse_innovation_covariance_cols             |  out|    1|      ap_vld|    hw_filter_inverse_innovation_covariance_cols|       pointer|
+|hw_filter_inverse_innovation_covariance_cols_ap_vld      |  out|    1|      ap_vld|    hw_filter_inverse_innovation_covariance_cols|       pointer|
+|hw_filter_optimal_gain_rows                              |  out|    2|      ap_vld|                     hw_filter_optimal_gain_rows|       pointer|
+|hw_filter_optimal_gain_rows_ap_vld                       |  out|    1|      ap_vld|                     hw_filter_optimal_gain_rows|       pointer|
+|hw_filter_optimal_gain_cols                              |  out|    1|      ap_vld|                     hw_filter_optimal_gain_cols|       pointer|
+|hw_filter_optimal_gain_cols_ap_vld                       |  out|    1|      ap_vld|                     hw_filter_optimal_gain_cols|       pointer|
+|hw_filter_state_estimate_rows                            |  out|    2|      ap_vld|                   hw_filter_state_estimate_rows|       pointer|
+|hw_filter_state_estimate_rows_ap_vld                     |  out|    1|      ap_vld|                   hw_filter_state_estimate_rows|       pointer|
+|hw_filter_state_estimate_cols                            |  out|    1|      ap_vld|                   hw_filter_state_estimate_cols|       pointer|
+|hw_filter_state_estimate_cols_ap_vld                     |  out|    1|      ap_vld|                   hw_filter_state_estimate_cols|       pointer|
+|hw_filter_estimate_covariance_rows                       |  out|    2|      ap_vld|              hw_filter_estimate_covariance_rows|       pointer|
+|hw_filter_estimate_covariance_rows_ap_vld                |  out|    1|      ap_vld|              hw_filter_estimate_covariance_rows|       pointer|
+|hw_filter_estimate_covariance_cols                       |  out|    2|      ap_vld|              hw_filter_estimate_covariance_cols|       pointer|
+|hw_filter_estimate_covariance_cols_ap_vld                |  out|    1|      ap_vld|              hw_filter_estimate_covariance_cols|       pointer|
+|hw_filter_vertical_scratch_rows                          |  out|    2|      ap_vld|                 hw_filter_vertical_scratch_rows|       pointer|
+|hw_filter_vertical_scratch_rows_ap_vld                   |  out|    1|      ap_vld|                 hw_filter_vertical_scratch_rows|       pointer|
+|hw_filter_vertical_scratch_cols                          |  out|    1|      ap_vld|                 hw_filter_vertical_scratch_cols|       pointer|
+|hw_filter_vertical_scratch_cols_ap_vld                   |  out|    1|      ap_vld|                 hw_filter_vertical_scratch_cols|       pointer|
+|hw_filter_big_square_scratch_rows                        |  out|    2|      ap_vld|               hw_filter_big_square_scratch_rows|       pointer|
+|hw_filter_big_square_scratch_rows_ap_vld                 |  out|    1|      ap_vld|               hw_filter_big_square_scratch_rows|       pointer|
+|hw_filter_big_square_scratch_cols                        |  out|    2|      ap_vld|               hw_filter_big_square_scratch_cols|       pointer|
+|hw_filter_big_square_scratch_cols_ap_vld                 |  out|    1|      ap_vld|               hw_filter_big_square_scratch_cols|       pointer|
+|hw_filter_state_transition_data_V_address0               |  out|    4|   ap_memory|               hw_filter_state_transition_data_V|         array|
+|hw_filter_state_transition_data_V_ce0                    |  out|    1|   ap_memory|               hw_filter_state_transition_data_V|         array|
+|hw_filter_state_transition_data_V_we0                    |  out|    1|   ap_memory|               hw_filter_state_transition_data_V|         array|
+|hw_filter_state_transition_data_V_d0                     |  out|   17|   ap_memory|               hw_filter_state_transition_data_V|         array|
+|hw_filter_state_transition_data_V_address1               |  out|    4|   ap_memory|               hw_filter_state_transition_data_V|         array|
+|hw_filter_state_transition_data_V_ce1                    |  out|    1|   ap_memory|               hw_filter_state_transition_data_V|         array|
+|hw_filter_state_transition_data_V_we1                    |  out|    1|   ap_memory|               hw_filter_state_transition_data_V|         array|
+|hw_filter_state_transition_data_V_d1                     |  out|   17|   ap_memory|               hw_filter_state_transition_data_V|         array|
+|hw_filter_observation_model_data_V_address0              |  out|    4|   ap_memory|              hw_filter_observation_model_data_V|         array|
+|hw_filter_observation_model_data_V_ce0                   |  out|    1|   ap_memory|              hw_filter_observation_model_data_V|         array|
+|hw_filter_observation_model_data_V_we0                   |  out|    1|   ap_memory|              hw_filter_observation_model_data_V|         array|
+|hw_filter_observation_model_data_V_d0                    |  out|   17|   ap_memory|              hw_filter_observation_model_data_V|         array|
+|hw_filter_observation_model_data_V_address1              |  out|    4|   ap_memory|              hw_filter_observation_model_data_V|         array|
+|hw_filter_observation_model_data_V_ce1                   |  out|    1|   ap_memory|              hw_filter_observation_model_data_V|         array|
+|hw_filter_observation_model_data_V_we1                   |  out|    1|   ap_memory|              hw_filter_observation_model_data_V|         array|
+|hw_filter_observation_model_data_V_d1                    |  out|   17|   ap_memory|              hw_filter_observation_model_data_V|         array|
+|hw_filter_process_noise_covariance_data_V_address0       |  out|    4|   ap_memory|       hw_filter_process_noise_covariance_data_V|         array|
+|hw_filter_process_noise_covariance_data_V_ce0            |  out|    1|   ap_memory|       hw_filter_process_noise_covariance_data_V|         array|
+|hw_filter_process_noise_covariance_data_V_we0            |  out|    1|   ap_memory|       hw_filter_process_noise_covariance_data_V|         array|
+|hw_filter_process_noise_covariance_data_V_d0             |  out|   17|   ap_memory|       hw_filter_process_noise_covariance_data_V|         array|
+|hw_filter_process_noise_covariance_data_V_address1       |  out|    4|   ap_memory|       hw_filter_process_noise_covariance_data_V|         array|
+|hw_filter_process_noise_covariance_data_V_ce1            |  out|    1|   ap_memory|       hw_filter_process_noise_covariance_data_V|         array|
+|hw_filter_process_noise_covariance_data_V_we1            |  out|    1|   ap_memory|       hw_filter_process_noise_covariance_data_V|         array|
+|hw_filter_process_noise_covariance_data_V_d1             |  out|   17|   ap_memory|       hw_filter_process_noise_covariance_data_V|         array|
+|hw_filter_observation_noise_covariance_data_V_address0   |  out|    4|   ap_memory|   hw_filter_observation_noise_covariance_data_V|         array|
+|hw_filter_observation_noise_covariance_data_V_ce0        |  out|    1|   ap_memory|   hw_filter_observation_noise_covariance_data_V|         array|
+|hw_filter_observation_noise_covariance_data_V_we0        |  out|    1|   ap_memory|   hw_filter_observation_noise_covariance_data_V|         array|
+|hw_filter_observation_noise_covariance_data_V_d0         |  out|   17|   ap_memory|   hw_filter_observation_noise_covariance_data_V|         array|
+|hw_filter_observation_noise_covariance_data_V_address1   |  out|    4|   ap_memory|   hw_filter_observation_noise_covariance_data_V|         array|
+|hw_filter_observation_noise_covariance_data_V_ce1        |  out|    1|   ap_memory|   hw_filter_observation_noise_covariance_data_V|         array|
+|hw_filter_observation_noise_covariance_data_V_we1        |  out|    1|   ap_memory|   hw_filter_observation_noise_covariance_data_V|         array|
+|hw_filter_observation_noise_covariance_data_V_d1         |  out|   17|   ap_memory|   hw_filter_observation_noise_covariance_data_V|         array|
+|hw_filter_observation_data_V_address0                    |  out|    4|   ap_memory|                    hw_filter_observation_data_V|         array|
+|hw_filter_observation_data_V_ce0                         |  out|    1|   ap_memory|                    hw_filter_observation_data_V|         array|
+|hw_filter_observation_data_V_we0                         |  out|    1|   ap_memory|                    hw_filter_observation_data_V|         array|
+|hw_filter_observation_data_V_d0                          |  out|   32|   ap_memory|                    hw_filter_observation_data_V|         array|
+|hw_filter_observation_data_V_address1                    |  out|    4|   ap_memory|                    hw_filter_observation_data_V|         array|
+|hw_filter_observation_data_V_ce1                         |  out|    1|   ap_memory|                    hw_filter_observation_data_V|         array|
+|hw_filter_observation_data_V_we1                         |  out|    1|   ap_memory|                    hw_filter_observation_data_V|         array|
+|hw_filter_observation_data_V_d1                          |  out|   32|   ap_memory|                    hw_filter_observation_data_V|         array|
+|hw_filter_predicted_state_data_V_address0                |  out|    4|   ap_memory|                hw_filter_predicted_state_data_V|         array|
+|hw_filter_predicted_state_data_V_ce0                     |  out|    1|   ap_memory|                hw_filter_predicted_state_data_V|         array|
+|hw_filter_predicted_state_data_V_we0                     |  out|    1|   ap_memory|                hw_filter_predicted_state_data_V|         array|
+|hw_filter_predicted_state_data_V_d0                      |  out|   32|   ap_memory|                hw_filter_predicted_state_data_V|         array|
+|hw_filter_predicted_state_data_V_address1                |  out|    4|   ap_memory|                hw_filter_predicted_state_data_V|         array|
+|hw_filter_predicted_state_data_V_ce1                     |  out|    1|   ap_memory|                hw_filter_predicted_state_data_V|         array|
+|hw_filter_predicted_state_data_V_we1                     |  out|    1|   ap_memory|                hw_filter_predicted_state_data_V|         array|
+|hw_filter_predicted_state_data_V_d1                      |  out|   32|   ap_memory|                hw_filter_predicted_state_data_V|         array|
+|hw_filter_predicted_estimate_covariance_data_V_address0  |  out|    4|   ap_memory|  hw_filter_predicted_estimate_covariance_data_V|         array|
+|hw_filter_predicted_estimate_covariance_data_V_ce0       |  out|    1|   ap_memory|  hw_filter_predicted_estimate_covariance_data_V|         array|
+|hw_filter_predicted_estimate_covariance_data_V_we0       |  out|    1|   ap_memory|  hw_filter_predicted_estimate_covariance_data_V|         array|
+|hw_filter_predicted_estimate_covariance_data_V_d0        |  out|   32|   ap_memory|  hw_filter_predicted_estimate_covariance_data_V|         array|
+|hw_filter_predicted_estimate_covariance_data_V_address1  |  out|    4|   ap_memory|  hw_filter_predicted_estimate_covariance_data_V|         array|
+|hw_filter_predicted_estimate_covariance_data_V_ce1       |  out|    1|   ap_memory|  hw_filter_predicted_estimate_covariance_data_V|         array|
+|hw_filter_predicted_estimate_covariance_data_V_we1       |  out|    1|   ap_memory|  hw_filter_predicted_estimate_covariance_data_V|         array|
+|hw_filter_predicted_estimate_covariance_data_V_d1        |  out|   32|   ap_memory|  hw_filter_predicted_estimate_covariance_data_V|         array|
+|hw_filter_innovation_data_V_address0                     |  out|    4|   ap_memory|                     hw_filter_innovation_data_V|         array|
+|hw_filter_innovation_data_V_ce0                          |  out|    1|   ap_memory|                     hw_filter_innovation_data_V|         array|
+|hw_filter_innovation_data_V_we0                          |  out|    1|   ap_memory|                     hw_filter_innovation_data_V|         array|
+|hw_filter_innovation_data_V_d0                           |  out|   32|   ap_memory|                     hw_filter_innovation_data_V|         array|
+|hw_filter_innovation_data_V_address1                     |  out|    4|   ap_memory|                     hw_filter_innovation_data_V|         array|
+|hw_filter_innovation_data_V_ce1                          |  out|    1|   ap_memory|                     hw_filter_innovation_data_V|         array|
+|hw_filter_innovation_data_V_we1                          |  out|    1|   ap_memory|                     hw_filter_innovation_data_V|         array|
+|hw_filter_innovation_data_V_d1                           |  out|   32|   ap_memory|                     hw_filter_innovation_data_V|         array|
+|hw_filter_innovation_covariance_data_V_address0          |  out|    4|   ap_memory|          hw_filter_innovation_covariance_data_V|         array|
+|hw_filter_innovation_covariance_data_V_ce0               |  out|    1|   ap_memory|          hw_filter_innovation_covariance_data_V|         array|
+|hw_filter_innovation_covariance_data_V_we0               |  out|    1|   ap_memory|          hw_filter_innovation_covariance_data_V|         array|
+|hw_filter_innovation_covariance_data_V_d0                |  out|   32|   ap_memory|          hw_filter_innovation_covariance_data_V|         array|
+|hw_filter_innovation_covariance_data_V_address1          |  out|    4|   ap_memory|          hw_filter_innovation_covariance_data_V|         array|
+|hw_filter_innovation_covariance_data_V_ce1               |  out|    1|   ap_memory|          hw_filter_innovation_covariance_data_V|         array|
+|hw_filter_innovation_covariance_data_V_we1               |  out|    1|   ap_memory|          hw_filter_innovation_covariance_data_V|         array|
+|hw_filter_innovation_covariance_data_V_d1                |  out|   32|   ap_memory|          hw_filter_innovation_covariance_data_V|         array|
+|hw_filter_inverse_innovation_covariance_data_V_address0  |  out|    4|   ap_memory|  hw_filter_inverse_innovation_covariance_data_V|         array|
+|hw_filter_inverse_innovation_covariance_data_V_ce0       |  out|    1|   ap_memory|  hw_filter_inverse_innovation_covariance_data_V|         array|
+|hw_filter_inverse_innovation_covariance_data_V_we0       |  out|    1|   ap_memory|  hw_filter_inverse_innovation_covariance_data_V|         array|
+|hw_filter_inverse_innovation_covariance_data_V_d0        |  out|   32|   ap_memory|  hw_filter_inverse_innovation_covariance_data_V|         array|
+|hw_filter_inverse_innovation_covariance_data_V_address1  |  out|    4|   ap_memory|  hw_filter_inverse_innovation_covariance_data_V|         array|
+|hw_filter_inverse_innovation_covariance_data_V_ce1       |  out|    1|   ap_memory|  hw_filter_inverse_innovation_covariance_data_V|         array|
+|hw_filter_inverse_innovation_covariance_data_V_we1       |  out|    1|   ap_memory|  hw_filter_inverse_innovation_covariance_data_V|         array|
+|hw_filter_inverse_innovation_covariance_data_V_d1        |  out|   32|   ap_memory|  hw_filter_inverse_innovation_covariance_data_V|         array|
+|hw_filter_optimal_gain_data_V_address0                   |  out|    4|   ap_memory|                   hw_filter_optimal_gain_data_V|         array|
+|hw_filter_optimal_gain_data_V_ce0                        |  out|    1|   ap_memory|                   hw_filter_optimal_gain_data_V|         array|
+|hw_filter_optimal_gain_data_V_we0                        |  out|    1|   ap_memory|                   hw_filter_optimal_gain_data_V|         array|
+|hw_filter_optimal_gain_data_V_d0                         |  out|   32|   ap_memory|                   hw_filter_optimal_gain_data_V|         array|
+|hw_filter_optimal_gain_data_V_address1                   |  out|    4|   ap_memory|                   hw_filter_optimal_gain_data_V|         array|
+|hw_filter_optimal_gain_data_V_ce1                        |  out|    1|   ap_memory|                   hw_filter_optimal_gain_data_V|         array|
+|hw_filter_optimal_gain_data_V_we1                        |  out|    1|   ap_memory|                   hw_filter_optimal_gain_data_V|         array|
+|hw_filter_optimal_gain_data_V_d1                         |  out|   32|   ap_memory|                   hw_filter_optimal_gain_data_V|         array|
+|hw_filter_state_estimate_data_V_address0                 |  out|    4|   ap_memory|                 hw_filter_state_estimate_data_V|         array|
+|hw_filter_state_estimate_data_V_ce0                      |  out|    1|   ap_memory|                 hw_filter_state_estimate_data_V|         array|
+|hw_filter_state_estimate_data_V_we0                      |  out|    1|   ap_memory|                 hw_filter_state_estimate_data_V|         array|
+|hw_filter_state_estimate_data_V_d0                       |  out|   32|   ap_memory|                 hw_filter_state_estimate_data_V|         array|
+|hw_filter_state_estimate_data_V_address1                 |  out|    4|   ap_memory|                 hw_filter_state_estimate_data_V|         array|
+|hw_filter_state_estimate_data_V_ce1                      |  out|    1|   ap_memory|                 hw_filter_state_estimate_data_V|         array|
+|hw_filter_state_estimate_data_V_we1                      |  out|    1|   ap_memory|                 hw_filter_state_estimate_data_V|         array|
+|hw_filter_state_estimate_data_V_d1                       |  out|   32|   ap_memory|                 hw_filter_state_estimate_data_V|         array|
+|hw_filter_estimate_covariance_data_V_address0            |  out|    4|   ap_memory|            hw_filter_estimate_covariance_data_V|         array|
+|hw_filter_estimate_covariance_data_V_ce0                 |  out|    1|   ap_memory|            hw_filter_estimate_covariance_data_V|         array|
+|hw_filter_estimate_covariance_data_V_we0                 |  out|    1|   ap_memory|            hw_filter_estimate_covariance_data_V|         array|
+|hw_filter_estimate_covariance_data_V_d0                  |  out|   32|   ap_memory|            hw_filter_estimate_covariance_data_V|         array|
+|hw_filter_estimate_covariance_data_V_address1            |  out|    4|   ap_memory|            hw_filter_estimate_covariance_data_V|         array|
+|hw_filter_estimate_covariance_data_V_ce1                 |  out|    1|   ap_memory|            hw_filter_estimate_covariance_data_V|         array|
+|hw_filter_estimate_covariance_data_V_we1                 |  out|    1|   ap_memory|            hw_filter_estimate_covariance_data_V|         array|
+|hw_filter_estimate_covariance_data_V_d1                  |  out|   32|   ap_memory|            hw_filter_estimate_covariance_data_V|         array|
+|hw_filter_vertical_scratch_data_V_address0               |  out|    4|   ap_memory|               hw_filter_vertical_scratch_data_V|         array|
+|hw_filter_vertical_scratch_data_V_ce0                    |  out|    1|   ap_memory|               hw_filter_vertical_scratch_data_V|         array|
+|hw_filter_vertical_scratch_data_V_we0                    |  out|    1|   ap_memory|               hw_filter_vertical_scratch_data_V|         array|
+|hw_filter_vertical_scratch_data_V_d0                     |  out|   32|   ap_memory|               hw_filter_vertical_scratch_data_V|         array|
+|hw_filter_vertical_scratch_data_V_address1               |  out|    4|   ap_memory|               hw_filter_vertical_scratch_data_V|         array|
+|hw_filter_vertical_scratch_data_V_ce1                    |  out|    1|   ap_memory|               hw_filter_vertical_scratch_data_V|         array|
+|hw_filter_vertical_scratch_data_V_we1                    |  out|    1|   ap_memory|               hw_filter_vertical_scratch_data_V|         array|
+|hw_filter_vertical_scratch_data_V_d1                     |  out|   32|   ap_memory|               hw_filter_vertical_scratch_data_V|         array|
+|hw_filter_big_square_scratch_data_V_address0             |  out|    4|   ap_memory|             hw_filter_big_square_scratch_data_V|         array|
+|hw_filter_big_square_scratch_data_V_ce0                  |  out|    1|   ap_memory|             hw_filter_big_square_scratch_data_V|         array|
+|hw_filter_big_square_scratch_data_V_we0                  |  out|    1|   ap_memory|             hw_filter_big_square_scratch_data_V|         array|
+|hw_filter_big_square_scratch_data_V_d0                   |  out|   32|   ap_memory|             hw_filter_big_square_scratch_data_V|         array|
+|hw_filter_big_square_scratch_data_V_address1             |  out|    4|   ap_memory|             hw_filter_big_square_scratch_data_V|         array|
+|hw_filter_big_square_scratch_data_V_ce1                  |  out|    1|   ap_memory|             hw_filter_big_square_scratch_data_V|         array|
+|hw_filter_big_square_scratch_data_V_we1                  |  out|    1|   ap_memory|             hw_filter_big_square_scratch_data_V|         array|
+|hw_filter_big_square_scratch_data_V_d1                   |  out|   32|   ap_memory|             hw_filter_big_square_scratch_data_V|         array|
++---------------------------------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+

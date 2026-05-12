@@ -1,0 +1,68 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'kalman_hw_update'" level="0">
+<item name = "Date">Wed Apr 29 02:01:21 2026
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">kalman_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.642 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">77, 625, 0.770 us, 6.250 us, 78, 626, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_estimate_fu_394">estimate, 65, 470, 0.650 us, 4.700 us, 65, 470, none</column>
+<column name="grp_predict_fu_460">predict, 6, 100, 60.000 ns, 1.000 us, 6, 100, none</column>
+<column name="grp_init_matrix_fu_494">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_504">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_514">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_524">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_534">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_544">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_554">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_564">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_574">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_584">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_594">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_604">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_614">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_46_1">3, 8, 3 ~ 4, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_48_2">1, 2, 1, -, -, 1 ~ 2, no</column>
+<column name="- VITIS_LOOP_46_1">3, 8, 3 ~ 4, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_48_2">1, 2, 1, -, -, 1 ~ 2, no</column>
+<column name="- VITIS_LOOP_46_1">3, 8, 3 ~ 4, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_48_2">1, 2, 1, -, -, 1 ~ 2, no</column>
+<column name="- VITIS_LOOP_174_1">4, 12, 4 ~ 6, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_176_2">2, 4, 2, -, -, 1 ~ 2, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

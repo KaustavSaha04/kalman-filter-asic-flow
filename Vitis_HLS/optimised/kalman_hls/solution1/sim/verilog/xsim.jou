@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  6 18:39:25 2026
+# Process ID: 8636
+# Current directory: C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/kalman_hw_update/xsim_script.tcl}
+# Log file: C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/kalman_hw_update/xsim_script.tcl
+open_wave_config kalman_hw_update_dataflow_ana.wcfg
+source kalman_hw_update.tcl

@@ -1,0 +1,51 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_CTRL_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_CTRL_s_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_dadd_64ns_64ns_64_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_dadd_64ns_64ns_64_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_dadddsub_64ns_64ns_64_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_dadddsub_64ns_64ns_64_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_dcmp_64ns_64ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_ddiv_64ns_64ns_64_31_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_ddiv_64ns_64ns_64_31_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_destructive_invert_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_destructive_invert_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_dmul_64ns_64ns_64_6_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_dmul_64ns_64ns_64_6_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_estimate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_estimate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_hw_filter_small_square_scratch_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_small_square_scratch_data_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_small_square_scratch_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_hw_filter_state_estimate_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_state_estimate_data_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_state_estimate_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_hw_filter_state_transition_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_state_transition_data_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_state_transition_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_init_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_init_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_multiply_matrix_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_multiply_matrix_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update_predict.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_predict
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/verilog/kalman_hw_update.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/ip/kalman_hw_update_ap_dadddsub_3_full_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_ap_dadddsub_3_full_dsp_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/ip/kalman_hw_update_ap_dadd_3_full_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_ap_dadd_3_full_dsp_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/ip/kalman_hw_update_ap_dcmp_0_no_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_ap_dcmp_0_no_dsp_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/ip/kalman_hw_update_ap_ddiv_29_no_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_ap_ddiv_29_no_dsp_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/ipshared/edd9/hdl/ip/kalman_hw_update_ap_dmul_4_max_dsp_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_ap_dmul_4_max_dsp_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_kalman_hw_update_0_0/sim/design_1_kalman_hw_update_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_kalman_hw_update_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/kalman/kalman/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

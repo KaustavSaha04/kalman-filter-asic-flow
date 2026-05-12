@@ -1,0 +1,14 @@
+{
+    "DESIGN_NAME": "kalman_hw_update",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PORT": "ap_clk",
+    "CLOCK_PERIOD": 10,
+
+    "FP_CORE_UTIL": 20,
+    "PL_TARGET_DENSITY": 0.30,
+    "FP_ASPECT_RATIO": 1.0,
+    "DIE_AREA": "0 0 2500 2500",
+    "RT_MAX_LAYER": "met5"
+
+}
+

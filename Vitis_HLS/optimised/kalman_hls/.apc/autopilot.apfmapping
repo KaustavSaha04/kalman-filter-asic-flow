@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matrix.h" path="C:\Users\HP\OneDrive\Desktop\BTP_RND\RND\optimization\kalman_final1\kalman\matrix.h"/>
+    <originFiles name="matrix.cpp" path="C:\Users\HP\OneDrive\Desktop\BTP_RND\RND\optimization\kalman_final1\kalman\matrix.cpp"/>
+    <originFiles name="kalman.h" path="C:\Users\HP\OneDrive\Desktop\BTP_RND\RND\optimization\kalman_final1\kalman\kalman.h"/>
+    <originFiles name="kalman.cpp" path="C:\Users\HP\OneDrive\Desktop\BTP_RND\RND\optimization\kalman_final1\kalman\kalman.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="kalman_test.cpp" path="C:\Users\HP\OneDrive\Desktop\BTP_RND\RND\optimization\kalman_final1\kalman\kalman_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

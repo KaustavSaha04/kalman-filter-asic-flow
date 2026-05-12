@@ -1,0 +1,8 @@
+{
+    "DESIGN_NAME": "kalman_hw_update",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10,
+    "FP_CORE_UTIL": 30,
+    "PL_TARGET_DENSITY": 0.50
+}

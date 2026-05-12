@@ -1,0 +1,398 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'kalman_hw_update'" level="0">
+<item name = "Date">Wed Apr 29 02:01:28 2026
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">kalman_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.642 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">77, 625, 0.770 us, 6.250 us, 78, 626, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_estimate_fu_394">estimate, 65, 470, 0.650 us, 4.700 us, 65, 470, none</column>
+<column name="grp_predict_fu_460">predict, 6, 100, 60.000 ns, 1.000 us, 6, 100, none</column>
+<column name="grp_init_matrix_fu_494">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_504">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_514">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_524">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_534">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_544">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_554">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_564">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_574">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_584">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_594">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_604">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+<column name="grp_init_matrix_fu_614">init_matrix, 7, 7, 70.000 ns, 70.000 ns, 8, 8, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_46_1">3, 8, 3 ~ 4, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_48_2">1, 2, 1, -, -, 1 ~ 2, no</column>
+<column name="- VITIS_LOOP_46_1">3, 8, 3 ~ 4, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_48_2">1, 2, 1, -, -, 1 ~ 2, no</column>
+<column name="- VITIS_LOOP_46_1">3, 8, 3 ~ 4, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_48_2">1, 2, 1, -, -, 1 ~ 2, no</column>
+<column name="- VITIS_LOOP_174_1">4, 12, 4 ~ 6, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_176_2">2, 4, 2, -, -, 1 ~ 2, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 538, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, 0, 5153, 9540, -</column>
+<column name="Memory">0, -, 1024, 128, -</column>
+<column name="Multiplexer">-, -, -, 1895, -</column>
+<column name="Register">-, -, 1195, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, 2, 0</specialColumn>
+<specialColumn name="Available">4032, 9216, 2592000, 1296000, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="CTRL_s_axi_U">CTRL_s_axi, 0, 0, 150, 232, 0</column>
+<column name="grp_estimate_fu_394">estimate, 0, 0, 4193, 6020, 0</column>
+<column name="grp_init_matrix_fu_494">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_504">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_514">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_524">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_534">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_544">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_554">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_564">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_574">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_584">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_594">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_604">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="grp_init_matrix_fu_614">init_matrix, 0, 0, 12, 147, 0</column>
+<column name="mul_32s_32ns_48_1_1_U73">mul_32s_32ns_48_1_1, 0, 0, 0, 20, 0</column>
+<column name="grp_predict_fu_460">predict, 0, 0, 654, 1357, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="hw_filter_innovation_covariance_data_V_U">hw_filter_innovation_covariance_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_U">hw_filter_innovation_covariance_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_state_estimate_data_V_U">hw_filter_innovation_covariance_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_small_square_scratch_data_V_U">hw_filter_small_square_scratch_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_state_transition_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_observation_model_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_process_noise_covariance_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_observation_noise_covariance_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_observation_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_predicted_state_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_predicted_estimate_covariance_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_innovation_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_optimal_gain_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_estimate_covariance_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_vertical_scratch_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="hw_filter_big_square_scratch_data_V_U">hw_filter_state_transition_data_V, 0, 64, 8, 0, 16, 32, 1, 512</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln1116_fu_1100_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln174_fu_1061_p2">+, 0, 0, 38, 31, 1</column>
+<column name="add_ln176_fu_1090_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln46_1_fu_905_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln46_2_fu_990_p2">+, 0, 0, 38, 31, 1</column>
+<column name="add_ln46_fu_838_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln48_1_fu_946_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln48_2_fu_1013_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln48_fu_861_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln50_1_fu_956_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln50_2_fu_1023_p2">+, 0, 0, 12, 4, 4</column>
+<column name="add_ln50_fu_871_p2">+, 0, 0, 12, 4, 4</column>
+<column name="icmp_ln174_fu_1079_p2">icmp, 0, 0, 19, 31, 31</column>
+<column name="icmp_ln176_fu_1114_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln46_1_fu_923_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln46_2_fu_932_p2">icmp, 0, 0, 20, 32, 1</column>
+<column name="icmp_ln46_3_fu_1008_p2">icmp, 0, 0, 19, 31, 31</column>
+<column name="icmp_ln46_fu_856_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln48_1_fu_970_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln48_2_fu_1041_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln48_fu_885_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln50_1_fu_975_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="icmp_ln50_2_fu_1046_p2">icmp, 0, 0, 19, 31, 31</column>
+<column name="icmp_ln50_fu_890_p2">icmp, 0, 0, 20, 32, 32</column>
+<column name="select_ln50_1_fu_981_p3">select, 0, 0, 17, 1, 17</column>
+<column name="select_ln50_2_fu_1052_p3">select, 0, 0, 17, 1, 17</column>
+<column name="select_ln50_fu_896_p3">select, 0, 0, 17, 1, 17</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">123, 26, 1, 26</column>
+<column name="grp_init_matrix_fu_504_m_cols_write">14, 3, 2, 6</column>
+<column name="hw_filter_big_square_scratch_data_V_address0">20, 4, 4, 16</column>
+<column name="hw_filter_big_square_scratch_data_V_ce0">20, 4, 1, 4</column>
+<column name="hw_filter_big_square_scratch_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_big_square_scratch_data_V_d0">20, 4, 32, 128</column>
+<column name="hw_filter_big_square_scratch_data_V_we0">20, 4, 1, 4</column>
+<column name="hw_filter_big_square_scratch_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_estimate_covariance_cols">9, 2, 32, 64</column>
+<column name="hw_filter_estimate_covariance_data_V_address0">37, 7, 4, 28</column>
+<column name="hw_filter_estimate_covariance_data_V_ce0">26, 5, 1, 5</column>
+<column name="hw_filter_estimate_covariance_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_estimate_covariance_data_V_d0">26, 5, 32, 160</column>
+<column name="hw_filter_estimate_covariance_data_V_we0">20, 4, 1, 4</column>
+<column name="hw_filter_estimate_covariance_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_estimate_covariance_rows">9, 2, 32, 64</column>
+<column name="hw_filter_innovation_cols">9, 2, 32, 64</column>
+<column name="hw_filter_innovation_covariance_cols">9, 2, 32, 64</column>
+<column name="hw_filter_innovation_covariance_data_V_address0">14, 3, 4, 12</column>
+<column name="hw_filter_innovation_covariance_data_V_address1">14, 3, 4, 12</column>
+<column name="hw_filter_innovation_covariance_data_V_ce0">14, 3, 1, 3</column>
+<column name="hw_filter_innovation_covariance_data_V_ce1">14, 3, 1, 3</column>
+<column name="hw_filter_innovation_covariance_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_innovation_covariance_data_V_d1">14, 3, 32, 96</column>
+<column name="hw_filter_innovation_covariance_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_innovation_covariance_data_V_we1">14, 3, 1, 3</column>
+<column name="hw_filter_innovation_covariance_rows">9, 2, 32, 64</column>
+<column name="hw_filter_innovation_data_V_address0">14, 3, 4, 12</column>
+<column name="hw_filter_innovation_data_V_ce0">14, 3, 1, 3</column>
+<column name="hw_filter_innovation_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_innovation_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_innovation_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_innovation_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_inverse_innovation_covariance_cols">9, 2, 32, 64</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_address0">14, 3, 4, 12</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_address1">14, 3, 4, 12</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_ce0">14, 3, 1, 3</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_ce1">14, 3, 1, 3</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_d1">14, 3, 32, 96</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_inverse_innovation_covariance_data_V_we1">14, 3, 1, 3</column>
+<column name="hw_filter_observation_data_V_address0">20, 4, 4, 16</column>
+<column name="hw_filter_observation_data_V_ce0">20, 4, 1, 4</column>
+<column name="hw_filter_observation_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_observation_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_observation_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_observation_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_observation_model_data_V_address0">20, 4, 4, 16</column>
+<column name="hw_filter_observation_model_data_V_address1">14, 3, 4, 12</column>
+<column name="hw_filter_observation_model_data_V_ce0">20, 4, 1, 4</column>
+<column name="hw_filter_observation_model_data_V_ce1">14, 3, 1, 3</column>
+<column name="hw_filter_observation_model_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_observation_model_data_V_d1">14, 3, 32, 96</column>
+<column name="hw_filter_observation_model_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_observation_model_data_V_we1">14, 3, 1, 3</column>
+<column name="hw_filter_observation_noise_covariance_data_V_address0">20, 4, 4, 16</column>
+<column name="hw_filter_observation_noise_covariance_data_V_ce0">20, 4, 1, 4</column>
+<column name="hw_filter_observation_noise_covariance_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_observation_noise_covariance_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_observation_noise_covariance_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_observation_noise_covariance_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_optimal_gain_cols">9, 2, 32, 64</column>
+<column name="hw_filter_optimal_gain_data_V_address0">14, 3, 4, 12</column>
+<column name="hw_filter_optimal_gain_data_V_ce0">14, 3, 1, 3</column>
+<column name="hw_filter_optimal_gain_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_optimal_gain_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_optimal_gain_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_optimal_gain_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_optimal_gain_rows">9, 2, 32, 64</column>
+<column name="hw_filter_predicted_estimate_covariance_cols">9, 2, 32, 64</column>
+<column name="hw_filter_predicted_estimate_covariance_data_V_address0">20, 4, 4, 16</column>
+<column name="hw_filter_predicted_estimate_covariance_data_V_ce0">20, 4, 1, 4</column>
+<column name="hw_filter_predicted_estimate_covariance_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_predicted_estimate_covariance_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_predicted_estimate_covariance_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_predicted_estimate_covariance_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_predicted_estimate_covariance_rows">9, 2, 32, 64</column>
+<column name="hw_filter_predicted_state_cols">9, 2, 32, 64</column>
+<column name="hw_filter_predicted_state_data_V_address0">20, 4, 4, 16</column>
+<column name="hw_filter_predicted_state_data_V_ce0">20, 4, 1, 4</column>
+<column name="hw_filter_predicted_state_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_predicted_state_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_predicted_state_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_predicted_state_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_process_noise_covariance_data_V_address0">20, 4, 4, 16</column>
+<column name="hw_filter_process_noise_covariance_data_V_ce0">20, 4, 1, 4</column>
+<column name="hw_filter_process_noise_covariance_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_process_noise_covariance_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_process_noise_covariance_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_process_noise_covariance_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_small_square_scratch_data_V_ce0">9, 2, 1, 2</column>
+<column name="hw_filter_small_square_scratch_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_small_square_scratch_data_V_we0">9, 2, 1, 2</column>
+<column name="hw_filter_small_square_scratch_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_state_estimate_cols">9, 2, 32, 64</column>
+<column name="hw_filter_state_estimate_data_V_address0">26, 5, 4, 20</column>
+<column name="hw_filter_state_estimate_data_V_address1">14, 3, 4, 12</column>
+<column name="hw_filter_state_estimate_data_V_ce0">26, 5, 1, 5</column>
+<column name="hw_filter_state_estimate_data_V_ce1">14, 3, 1, 3</column>
+<column name="hw_filter_state_estimate_data_V_d0">20, 4, 32, 128</column>
+<column name="hw_filter_state_estimate_data_V_d1">14, 3, 32, 96</column>
+<column name="hw_filter_state_estimate_data_V_we0">20, 4, 1, 4</column>
+<column name="hw_filter_state_estimate_data_V_we1">14, 3, 1, 3</column>
+<column name="hw_filter_state_transition_data_V_address0">26, 5, 4, 20</column>
+<column name="hw_filter_state_transition_data_V_address1">20, 4, 4, 16</column>
+<column name="hw_filter_state_transition_data_V_ce0">20, 4, 1, 4</column>
+<column name="hw_filter_state_transition_data_V_ce1">14, 3, 1, 3</column>
+<column name="hw_filter_state_transition_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_state_transition_data_V_d1">20, 4, 32, 128</column>
+<column name="hw_filter_state_transition_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_state_transition_data_V_we1">14, 3, 1, 3</column>
+<column name="hw_filter_timestep">9, 2, 32, 64</column>
+<column name="hw_filter_vertical_scratch_cols">9, 2, 32, 64</column>
+<column name="hw_filter_vertical_scratch_data_V_address0">14, 3, 4, 12</column>
+<column name="hw_filter_vertical_scratch_data_V_ce0">14, 3, 1, 3</column>
+<column name="hw_filter_vertical_scratch_data_V_ce1">9, 2, 1, 2</column>
+<column name="hw_filter_vertical_scratch_data_V_d0">14, 3, 32, 96</column>
+<column name="hw_filter_vertical_scratch_data_V_we0">14, 3, 1, 3</column>
+<column name="hw_filter_vertical_scratch_data_V_we1">9, 2, 1, 2</column>
+<column name="hw_filter_vertical_scratch_rows">9, 2, 32, 64</column>
+<column name="i_4_reg_326">9, 2, 32, 64</column>
+<column name="i_5_reg_349">9, 2, 31, 62</column>
+<column name="i_6_reg_372">9, 2, 31, 62</column>
+<column name="i_reg_303">9, 2, 32, 64</column>
+<column name="j_4_reg_338">9, 2, 5, 10</column>
+<column name="j_5_reg_361">9, 2, 5, 10</column>
+<column name="j_6_reg_383">9, 2, 5, 10</column>
+<column name="j_reg_315">9, 2, 5, 10</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln174_reg_1245">31, 0, 31, 0</column>
+<column name="add_ln176_reg_1258">5, 0, 5, 0</column>
+<column name="add_ln46_1_reg_1190">32, 0, 32, 0</column>
+<column name="add_ln46_2_reg_1224">31, 0, 31, 0</column>
+<column name="add_ln46_reg_1169">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">25, 0, 25, 0</column>
+<column name="grp_estimate_fu_394_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_494_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_504_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_514_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_524_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_534_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_544_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_554_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_564_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_574_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_584_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_594_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_604_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_init_matrix_fu_614_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_predict_fu_460_ap_start_reg">1, 0, 1, 0</column>
+<column name="hw_filter_estimate_covariance_cols">32, 0, 32, 0</column>
+<column name="hw_filter_estimate_covariance_data_V_addr_1_reg_1263">4, 0, 4, 0</column>
+<column name="hw_filter_estimate_covariance_rows">32, 0, 32, 0</column>
+<column name="hw_filter_innovation_cols">32, 0, 32, 0</column>
+<column name="hw_filter_innovation_covariance_cols">32, 0, 32, 0</column>
+<column name="hw_filter_innovation_covariance_rows">32, 0, 32, 0</column>
+<column name="hw_filter_inverse_innovation_covariance_cols">32, 0, 32, 0</column>
+<column name="hw_filter_observation_cols">32, 0, 32, 0</column>
+<column name="hw_filter_observation_model_cols">32, 0, 32, 0</column>
+<column name="hw_filter_observation_model_rows">32, 0, 32, 0</column>
+<column name="hw_filter_observation_noise_covariance_cols_ret_reg_1164">32, 0, 32, 0</column>
+<column name="hw_filter_observation_noise_covariance_rows_ret_reg_1159">32, 0, 32, 0</column>
+<column name="hw_filter_observation_rows">32, 0, 32, 0</column>
+<column name="hw_filter_optimal_gain_cols">32, 0, 32, 0</column>
+<column name="hw_filter_optimal_gain_rows">32, 0, 32, 0</column>
+<column name="hw_filter_predicted_estimate_covariance_cols">32, 0, 32, 0</column>
+<column name="hw_filter_predicted_estimate_covariance_rows">32, 0, 32, 0</column>
+<column name="hw_filter_predicted_state_cols">32, 0, 32, 0</column>
+<column name="hw_filter_process_noise_covariance_cols_loc_reg_1154">32, 0, 32, 0</column>
+<column name="hw_filter_process_noise_covariance_rows_loc_reg_1149">32, 0, 32, 0</column>
+<column name="hw_filter_state_estimate_cols">32, 0, 32, 0</column>
+<column name="hw_filter_state_transition_cols">32, 0, 32, 0</column>
+<column name="hw_filter_state_transition_rows">32, 0, 32, 0</column>
+<column name="hw_filter_timestep">32, 0, 32, 0</column>
+<column name="hw_filter_vertical_scratch_cols">32, 0, 32, 0</column>
+<column name="hw_filter_vertical_scratch_rows">32, 0, 32, 0</column>
+<column name="i_4_reg_326">32, 0, 32, 0</column>
+<column name="i_5_reg_349">31, 0, 31, 0</column>
+<column name="i_6_reg_372">31, 0, 31, 0</column>
+<column name="i_reg_303">32, 0, 32, 0</column>
+<column name="icmp_ln46_2_reg_1203">1, 0, 1, 0</column>
+<column name="is_initialized">1, 0, 1, 0</column>
+<column name="is_initialized_load_reg_1145">1, 0, 1, 0</column>
+<column name="j_4_reg_338">5, 0, 5, 0</column>
+<column name="j_5_reg_361">5, 0, 5, 0</column>
+<column name="j_6_reg_383">5, 0, 5, 0</column>
+<column name="j_reg_315">5, 0, 5, 0</column>
+<column name="obs_pos_read_reg_1140">32, 0, 32, 0</column>
+<column name="tmp_10_cast_reg_1250">2, 0, 4, 2</column>
+<column name="tmp_8_cast_reg_1195">2, 0, 4, 2</column>
+<column name="tmp_9_cast_reg_1229">2, 0, 4, 2</column>
+<column name="tmp_cast_reg_1174">2, 0, 4, 2</column>
+<column name="trunc_ln46_reg_1210">31, 0, 31, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_AWVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_AWREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_AWADDR">in, 6, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WDATA">in, 32, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_WSTRB">in, 4, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARVALID">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARREADY">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_ARADDR">in, 6, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RVALID">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RREADY">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RDATA">out, 32, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_RRESP">out, 2, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BVALID">out, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BREADY">in, 1, s_axi, CTRL, pointer</column>
+<column name="s_axi_CTRL_BRESP">out, 2, s_axi, CTRL, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, kalman_hw_update, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, kalman_hw_update, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, kalman_hw_update, return value</column>
+</table>
+</item>
+</section>
+</profile>

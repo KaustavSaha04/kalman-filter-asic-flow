@@ -1,0 +1,207 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling matrix.cpp_pre.cpp.tb.cpp
+   Compiling apatb_kalman_hw_update.cpp
+   Compiling kalman_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_kalman_hw_update_util.cpp
+   Compiling kalman.cpp_pre.cpp.tb.cpp
+   Compiling apatb_kalman_hw_update_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Step 0 - estimated position: 351.867676
+Step 0 - estimated velocity: 5175.781250
+Step 1 - estimated position: 1172.680603
+Step 1 - estimated velocity: 734.037384
+Step 2 - estimated position: 56.872238
+Step 2 - estimated velocity: -151.591385
+Step 3 - estimated position: 2.331985
+Step 3 - estimated velocity: -138.188110
+Step 4 - estimated position: 4.731964
+Step 4 - estimated velocity: 10.635223
+Step 5 - estimated position: 5.683060
+Step 5 - estimated velocity: 2.785004
+Step 6 - estimated position: 6.334717
+Step 6 - estimated velocity: 1.552628
+Step 7 - estimated position: 7.149155
+Step 7 - estimated velocity: 1.167023
+Step 8 - estimated position: 8.055832
+Step 8 - estimated velocity: 1.033203
+Step 9 - estimated position: 9.015854
+Step 9 - estimated velocity: 0.995621
+
+Final Result:
+estimated position: 9.015854
+estimated velocity: 0.995621
+OK
+
+C:\kalman\kalman\kalman_hls\solution1\sim\verilog>set PATH= 
+
+C:\kalman\kalman\kalman_hls\solution1\sim\verilog>call C:/Xilinx/Vivado/2020.2/bin/xelab xil_defaultlib.apatb_kalman_hw_update_top glbl -prj kalman_hw_update.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib "ieee_proposed=./ieee_proposed" -s kalman_hw_update  
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_kalman_hw_update_top glbl -prj kalman_hw_update.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s kalman_hw_update 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/AESL_axi_slave_CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_kalman_hw_update_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_CTRL_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_CTRL_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_destructive_invert_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_destructive_invert_matrix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_estimate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_estimate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_hw_filter_innovation_covariance_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_innovation_covariance_data_V_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_innovation_covariance_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_hw_filter_small_square_scratch_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_small_square_scratch_data_V_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_small_square_scratch_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_hw_filter_state_transition_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_state_transition_data_V_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_state_transition_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_init_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_init_matrix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_multiply_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_multiply_matrix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_mul_32s_32ns_48_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_32ns_48_1_1_Multiplier_1
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_32ns_48_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_mul_32s_32s_48_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_32s_48_1_1_Multiplier_0
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_32s_48_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_predict.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_predict
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_sdiv_34ns_32s_32_38_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_sdiv_34ns_32s_32_38_1_div_u
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_sdiv_34ns_32s_32_38_1_div
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_sdiv_34ns_32s_32_38_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/kalman/kalman/kalman_hls/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/kalman/kalman/kalman_hls/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/kalman/kalman/kalman_hls/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/kalman/kalman/kalman_hls/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/kalman/kalman/kalman_hls/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/kalman/kalman/kalman_hls/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_state...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_state...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_innov...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_innov...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_small...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_small...
+Compiling module xil_defaultlib.kalman_hw_update_CTRL_s_axi
+Compiling module xil_defaultlib.kalman_hw_update_sdiv_34ns_32s_3...
+Compiling module xil_defaultlib.kalman_hw_update_sdiv_34ns_32s_3...
+Compiling module xil_defaultlib.kalman_hw_update_sdiv_34ns_32s_3...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_32s_48_...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_32s_48_...
+Compiling module xil_defaultlib.kalman_hw_update_destructive_inv...
+Compiling module xil_defaultlib.kalman_hw_update_multiply_matrix
+Compiling module xil_defaultlib.kalman_hw_update_estimate
+Compiling module xil_defaultlib.kalman_hw_update_predict
+Compiling module xil_defaultlib.kalman_hw_update_init_matrix
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_32ns_48...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_32ns_48...
+Compiling module xil_defaultlib.kalman_hw_update
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_kalman_hw_update_top
+Compiling module work.glbl
+Built simulation snapshot kalman_hw_update
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/kalman/kalman/kalman_hls/solution1/sim/verilog/xsim.dir/kalman_hw_update/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 29 02:02:42 2026...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/kalman_hw_update/xsim_script.tcl
+# xsim {kalman_hw_update} -autoloadwcfg -tclbatch {kalman_hw_update.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source kalman_hw_update.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 10 [0.00%] @ "125000"
+// RTL Simulation : 1 / 10 [1.76%] @ "4115000"
+// RTL Simulation : 2 / 10 [3.36%] @ "7645000"
+// RTL Simulation : 3 / 10 [3.36%] @ "11165000"
+// RTL Simulation : 4 / 10 [3.36%] @ "14685000"
+// RTL Simulation : 5 / 10 [3.36%] @ "18205000"
+// RTL Simulation : 6 / 10 [3.36%] @ "21725000"
+// RTL Simulation : 7 / 10 [3.36%] @ "25245000"
+// RTL Simulation : 8 / 10 [3.36%] @ "28765000"
+// RTL Simulation : 9 / 10 [3.36%] @ "32285000"
+// RTL Simulation : 10 / 10 [100.00%] @ "35805000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 35845 ns : File "C:/kalman/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update.autotb.v" Line 283
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Apr 29 02:02:48 2026...
+Step 0 - estimated position: 351.867676
+Step 0 - estimated velocity: 5175.781250
+Step 1 - estimated position: 1172.680603
+Step 1 - estimated velocity: 734.037384
+Step 2 - estimated position: 56.872238
+Step 2 - estimated velocity: -151.591385
+Step 3 - estimated position: 2.331985
+Step 3 - estimated velocity: -138.188110
+Step 4 - estimated position: 4.731964
+Step 4 - estimated velocity: 10.635223
+Step 5 - estimated position: 5.683060
+Step 5 - estimated velocity: 2.785004
+Step 6 - estimated position: 6.334717
+Step 6 - estimated velocity: 1.552628
+Step 7 - estimated position: 7.149155
+Step 7 - estimated velocity: 1.167023
+Step 8 - estimated position: 8.055832
+Step 8 - estimated velocity: 1.033203
+Step 9 - estimated position: 9.015854
+Step 9 - estimated velocity: 0.995621
+
+Final Result:
+estimated position: 9.015854
+estimated velocity: 0.995621
+OK
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

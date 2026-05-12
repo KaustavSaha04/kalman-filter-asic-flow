@@ -1,0 +1,7 @@
+Running: xsim.dir/kalman_hw_update/xsimk.exe -simmode gui -wdb kalman_hw_update.wdb -simrunnum 0 -socket 54449
+Design successfully loaded
+Design Loading Memory Usage: 9588 KB (Peak: 9588 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 16424 KB (Peak: 16424 KB)
+Simulation CPU Usage: 374 ms

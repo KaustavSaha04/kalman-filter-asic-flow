@@ -1,0 +1,137 @@
+
+
+================================================================
+== Vitis HLS Report for 'init_matrix'
+================================================================
+* Date:           Wed Apr 29 02:01:22 2026
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        kalman_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  0.730 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        7|        7|  70.000 ns|  70.000 ns|    8|    8|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        -|        -|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      147|    -|
+|Register             |        -|     -|       12|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       12|      147|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3072|   864000|   432000|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9216|  2592000|  1296000|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------------+----+-----------+-----+-----------+
+    |       Name      | LUT| Input Size| Bits| Total Bits|
+    +-----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm        |  49|          9|    1|          9|
+    |m_data_address0  |  49|          9|    4|         36|
+    |m_data_address1  |  49|          9|    4|         36|
+    +-----------------+----+-----------+-----+-----------+
+    |Total            | 147|         27|    9|         81|
+    +-----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+---+----+-----+-----------+
+    |           Name           | FF| LUT| Bits| Const Bits|
+    +--------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                 |  8|   0|    8|          0|
+    |ap_port_reg_m_cols_write  |  2|   0|    2|          0|
+    |ap_port_reg_m_rows_write  |  2|   0|    2|          0|
+    +--------------------------+---+----+-----+-----------+
+    |Total                     | 12|   0|   12|          0|
+    +--------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+--------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------+-----+-----+------------+--------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|   init_matrix|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|   init_matrix|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|   init_matrix|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|   init_matrix|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|   init_matrix|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|   init_matrix|  return value|
+|ap_return_0      |  out|   32|  ap_ctrl_hs|   init_matrix|  return value|
+|ap_return_1      |  out|   32|  ap_ctrl_hs|   init_matrix|  return value|
+|ap_ce            |   in|    1|  ap_ctrl_hs|   init_matrix|  return value|
+|m_data_address0  |  out|    4|   ap_memory|        m_data|         array|
+|m_data_ce0       |  out|    1|   ap_memory|        m_data|         array|
+|m_data_we0       |  out|    1|   ap_memory|        m_data|         array|
+|m_data_d0        |  out|   32|   ap_memory|        m_data|         array|
+|m_data_address1  |  out|    4|   ap_memory|        m_data|         array|
+|m_data_ce1       |  out|    1|   ap_memory|        m_data|         array|
+|m_data_we1       |  out|    1|   ap_memory|        m_data|         array|
+|m_data_d1        |  out|   32|   ap_memory|        m_data|         array|
+|m_rows_write     |   in|    2|     ap_none|  m_rows_write|        scalar|
+|m_cols_write     |   in|    2|     ap_none|  m_cols_write|        scalar|
++-----------------+-----+-----+------------+--------------+--------------+
+

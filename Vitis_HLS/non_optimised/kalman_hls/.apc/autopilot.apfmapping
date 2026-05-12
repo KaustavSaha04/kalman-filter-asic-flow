@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kalman.h" path="C:\kalman\kalman\kalman.h"/>
+    <originFiles name="matrix.h" path="C:\kalman\kalman\matrix.h"/>
+    <originFiles name="kalman.cpp" path="C:\kalman\kalman\kalman.cpp"/>
+    <originFiles name="matrix.cpp" path="C:\kalman\kalman\matrix.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="kalman_test.cpp" path="C:\kalman\kalman\kalman_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

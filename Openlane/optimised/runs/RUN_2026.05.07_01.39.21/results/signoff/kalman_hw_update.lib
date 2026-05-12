@@ -1,0 +1,512 @@
+library (kalman_hw_update) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 1.80;
+
+  type ("s_axi_CTRL_ARADDR") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 6;
+    bit_from : 5;
+    bit_to : 0;
+  }
+  type ("s_axi_CTRL_AWADDR") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 6;
+    bit_from : 5;
+    bit_to : 0;
+  }
+  type ("s_axi_CTRL_BRESP") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 2;
+    bit_from : 1;
+    bit_to : 0;
+  }
+  type ("s_axi_CTRL_RDATA") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 32;
+    bit_from : 31;
+    bit_to : 0;
+  }
+  type ("s_axi_CTRL_RRESP") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 2;
+    bit_from : 1;
+    bit_to : 0;
+  }
+  type ("s_axi_CTRL_WDATA") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 32;
+    bit_from : 31;
+    bit_to : 0;
+  }
+  type ("s_axi_CTRL_WSTRB") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 4;
+    bit_from : 3;
+    bit_to : 0;
+  }
+
+  cell ("kalman_hw_update") {
+    pin("ap_clk") {
+      direction : input;
+      capacitance : 0.0129;
+    }
+    pin("ap_rst_n") {
+      direction : input;
+      capacitance : 0.0135;
+    }
+    pin("interrupt") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_ARREADY") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_ARVALID") {
+      direction : input;
+      capacitance : 0.0102;
+    }
+    pin("s_axi_CTRL_AWREADY") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_AWVALID") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("s_axi_CTRL_BREADY") {
+      direction : input;
+      capacitance : 0.0026;
+    }
+    pin("s_axi_CTRL_BVALID") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RREADY") {
+      direction : input;
+      capacitance : 0.0110;
+    }
+    pin("s_axi_CTRL_RVALID") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_WREADY") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_WVALID") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("VPWR") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("VGND") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    bus("s_axi_CTRL_ARADDR") {
+      bus_type : s_axi_CTRL_ARADDR;
+      direction : input;
+      capacitance : 0.0000;
+    pin("s_axi_CTRL_ARADDR[5]") {
+      direction : input;
+      capacitance : 0.0054;
+    }
+    pin("s_axi_CTRL_ARADDR[4]") {
+      direction : input;
+      capacitance : 0.0090;
+    }
+    pin("s_axi_CTRL_ARADDR[3]") {
+      direction : input;
+      capacitance : 0.0108;
+    }
+    pin("s_axi_CTRL_ARADDR[2]") {
+      direction : input;
+      capacitance : 0.0055;
+    }
+    pin("s_axi_CTRL_ARADDR[1]") {
+      direction : input;
+      capacitance : 0.0107;
+    }
+    pin("s_axi_CTRL_ARADDR[0]") {
+      direction : input;
+      capacitance : 0.0096;
+    }
+    }
+    bus("s_axi_CTRL_AWADDR") {
+      bus_type : s_axi_CTRL_AWADDR;
+      direction : input;
+      capacitance : 0.0000;
+    pin("s_axi_CTRL_AWADDR[5]") {
+      direction : input;
+      capacitance : 0.0054;
+    }
+    pin("s_axi_CTRL_AWADDR[4]") {
+      direction : input;
+      capacitance : 0.0055;
+    }
+    pin("s_axi_CTRL_AWADDR[3]") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("s_axi_CTRL_AWADDR[2]") {
+      direction : input;
+      capacitance : 0.0107;
+    }
+    pin("s_axi_CTRL_AWADDR[1]") {
+      direction : input;
+      capacitance : 0.0056;
+    }
+    pin("s_axi_CTRL_AWADDR[0]") {
+      direction : input;
+      capacitance : 0.0089;
+    }
+    }
+    bus("s_axi_CTRL_BRESP") {
+      bus_type : s_axi_CTRL_BRESP;
+      direction : output;
+      capacitance : 0.0000;
+    pin("s_axi_CTRL_BRESP[1]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_BRESP[0]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    }
+    bus("s_axi_CTRL_RDATA") {
+      bus_type : s_axi_CTRL_RDATA;
+      direction : output;
+      capacitance : 0.0000;
+    pin("s_axi_CTRL_RDATA[31]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[30]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[29]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[28]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[27]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[26]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[25]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[24]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[23]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[22]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[21]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[20]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[19]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[18]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[17]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[16]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[15]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[14]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[13]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[12]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[11]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[10]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[9]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[8]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[7]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[6]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[5]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[4]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[3]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[2]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[1]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RDATA[0]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    }
+    bus("s_axi_CTRL_RRESP") {
+      bus_type : s_axi_CTRL_RRESP;
+      direction : output;
+      capacitance : 0.0000;
+    pin("s_axi_CTRL_RRESP[1]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    pin("s_axi_CTRL_RRESP[0]") {
+      direction : output;
+      capacitance : 0.0000;
+    }
+    }
+    bus("s_axi_CTRL_WDATA") {
+      bus_type : s_axi_CTRL_WDATA;
+      direction : input;
+      capacitance : 0.0000;
+    pin("s_axi_CTRL_WDATA[31]") {
+      direction : input;
+      capacitance : 0.0146;
+    }
+    pin("s_axi_CTRL_WDATA[30]") {
+      direction : input;
+      capacitance : 0.0025;
+    }
+    pin("s_axi_CTRL_WDATA[29]") {
+      direction : input;
+      capacitance : 0.0146;
+    }
+    pin("s_axi_CTRL_WDATA[28]") {
+      direction : input;
+      capacitance : 0.0060;
+    }
+    pin("s_axi_CTRL_WDATA[27]") {
+      direction : input;
+      capacitance : 0.0105;
+    }
+    pin("s_axi_CTRL_WDATA[26]") {
+      direction : input;
+      capacitance : 0.0107;
+    }
+    pin("s_axi_CTRL_WDATA[25]") {
+      direction : input;
+      capacitance : 0.0086;
+    }
+    pin("s_axi_CTRL_WDATA[24]") {
+      direction : input;
+      capacitance : 0.0042;
+    }
+    pin("s_axi_CTRL_WDATA[23]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("s_axi_CTRL_WDATA[22]") {
+      direction : input;
+      capacitance : 0.0040;
+    }
+    pin("s_axi_CTRL_WDATA[21]") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("s_axi_CTRL_WDATA[20]") {
+      direction : input;
+      capacitance : 0.0083;
+    }
+    pin("s_axi_CTRL_WDATA[19]") {
+      direction : input;
+      capacitance : 0.0116;
+    }
+    pin("s_axi_CTRL_WDATA[18]") {
+      direction : input;
+      capacitance : 0.0049;
+    }
+    pin("s_axi_CTRL_WDATA[17]") {
+      direction : input;
+      capacitance : 0.0086;
+    }
+    pin("s_axi_CTRL_WDATA[16]") {
+      direction : input;
+      capacitance : 0.0057;
+    }
+    pin("s_axi_CTRL_WDATA[15]") {
+      direction : input;
+      capacitance : 0.0145;
+    }
+    pin("s_axi_CTRL_WDATA[14]") {
+      direction : input;
+      capacitance : 0.0091;
+    }
+    pin("s_axi_CTRL_WDATA[13]") {
+      direction : input;
+      capacitance : 0.0039;
+    }
+    pin("s_axi_CTRL_WDATA[12]") {
+      direction : input;
+      capacitance : 0.0084;
+    }
+    pin("s_axi_CTRL_WDATA[11]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("s_axi_CTRL_WDATA[10]") {
+      direction : input;
+      capacitance : 0.0146;
+    }
+    pin("s_axi_CTRL_WDATA[9]") {
+      direction : input;
+      capacitance : 0.0135;
+    }
+    pin("s_axi_CTRL_WDATA[8]") {
+      direction : input;
+      capacitance : 0.0135;
+    }
+    pin("s_axi_CTRL_WDATA[7]") {
+      direction : input;
+      capacitance : 0.0085;
+    }
+    pin("s_axi_CTRL_WDATA[6]") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("s_axi_CTRL_WDATA[5]") {
+      direction : input;
+      capacitance : 0.0025;
+    }
+    pin("s_axi_CTRL_WDATA[4]") {
+      direction : input;
+      capacitance : 0.0035;
+    }
+    pin("s_axi_CTRL_WDATA[3]") {
+      direction : input;
+      capacitance : 0.0054;
+    }
+    pin("s_axi_CTRL_WDATA[2]") {
+      direction : input;
+      capacitance : 0.0105;
+    }
+    pin("s_axi_CTRL_WDATA[1]") {
+      direction : input;
+      capacitance : 0.0096;
+    }
+    pin("s_axi_CTRL_WDATA[0]") {
+      direction : input;
+      capacitance : 0.0088;
+    }
+    }
+    bus("s_axi_CTRL_WSTRB") {
+      bus_type : s_axi_CTRL_WSTRB;
+      direction : input;
+      capacitance : 0.0000;
+    pin("s_axi_CTRL_WSTRB[3]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("s_axi_CTRL_WSTRB[2]") {
+      direction : input;
+      capacitance : 0.0040;
+    }
+    pin("s_axi_CTRL_WSTRB[1]") {
+      direction : input;
+      capacitance : 0.0079;
+    }
+    pin("s_axi_CTRL_WSTRB[0]") {
+      direction : input;
+      capacitance : 0.0079;
+    }
+    }
+  }
+
+}

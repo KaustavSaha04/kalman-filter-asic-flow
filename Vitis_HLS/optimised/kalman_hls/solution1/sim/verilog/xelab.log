@@ -1,0 +1,102 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_kalman_hw_update_top glbl -prj kalman_hw_update.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s kalman_hw_update -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/AESL_axi_slave_CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_kalman_hw_update_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_CTRL_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_CTRL_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_hw_filter_innovation_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_innovation_data_V_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_innovation_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_hw_filter_observation_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_observation_data_V_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_observation_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_hw_filter_observation_noise_covariance_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_observation_noise_covariance_data_V_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_observation_noise_covariance_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_hw_filter_predicted_state_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_predicted_state_data_V_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_predicted_state_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_hw_filter_state_transition_data_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_state_transition_data_V_ram
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_hw_filter_state_transition_data_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_init_kalman_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_init_kalman_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_mul_17ns_32s_48_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_17ns_32s_48_1_1_Multiplier_2
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_17ns_32s_48_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_mul_32s_17ns_48_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_17ns_48_1_1_Multiplier_0
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_17ns_48_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_mul_32s_32ns_48_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_32ns_48_1_1_Multiplier_1
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_32ns_48_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_mul_32s_32s_48_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_32s_48_1_1_Multiplier_3
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_mul_32s_32s_48_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/kalman_hw_update_sdiv_34ns_32s_32_38_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_sdiv_34ns_32s_32_38_1_div_u
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_sdiv_34ns_32s_32_38_1_div
+INFO: [VRFC 10-311] analyzing module kalman_hw_update_sdiv_34ns_32s_32_38_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/OneDrive/Desktop/BTP_RND/RND/optimization/kalman_final1/kalman/kalman_hls/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_state...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_state...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_obser...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_obser...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_obser...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_obser...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_predi...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_predi...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_innov...
+Compiling module xil_defaultlib.kalman_hw_update_hw_filter_innov...
+Compiling module xil_defaultlib.kalman_hw_update_CTRL_s_axi
+Compiling module xil_defaultlib.kalman_hw_update_init_kalman_fil...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_17ns_48...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_17ns_48...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_32ns_48...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_32ns_48...
+Compiling module xil_defaultlib.kalman_hw_update_mul_17ns_32s_48...
+Compiling module xil_defaultlib.kalman_hw_update_mul_17ns_32s_48...
+Compiling module xil_defaultlib.kalman_hw_update_sdiv_34ns_32s_3...
+Compiling module xil_defaultlib.kalman_hw_update_sdiv_34ns_32s_3...
+Compiling module xil_defaultlib.kalman_hw_update_sdiv_34ns_32s_3...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_32s_48_...
+Compiling module xil_defaultlib.kalman_hw_update_mul_32s_32s_48_...
+Compiling module xil_defaultlib.kalman_hw_update
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_kalman_hw_update_top
+Compiling module work.glbl
+Built simulation snapshot kalman_hw_update

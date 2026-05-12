@@ -1,0 +1,56 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'destructive_invert_matrix'" level="0">
+<item name = "Date">Wed Apr 29 02:01:17 2026
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">kalman_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.642 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 206, 10.000 ns, 2.060 us, 1, 206, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_46_1">3, 8, 3 ~ 4, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_48_2">1, 2, 1, -, -, 1 ~ 2, no</column>
+<column name="- VITIS_LOOP_213_1">9, 195, 9 ~ 96, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_217_2">2, 5, 2, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_184_1">3, 6, 3, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_184_1">3, 6, 3, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_193_1">2, 4, 2, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_193_1">2, 4, 2, -, -, 1 ~ 2, no</column>
+<column name=" + VITIS_LOOP_233_3">2, 24, 2 ~ 12, -, -, 1 ~ 2, no</column>
+<column name="  ++ VITIS_LOOP_201_1">2, 4, 2, -, -, 1 ~ 2, no</column>
+<column name="  ++ VITIS_LOOP_201_1">2, 4, 2, -, -, 1 ~ 2, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

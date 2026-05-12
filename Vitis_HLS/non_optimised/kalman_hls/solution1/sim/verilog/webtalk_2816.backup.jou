@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 29 02:02:42 2026
+# Process ID: 2816
+# Current directory: C:/kalman/kalman/kalman_hls/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/kalman/kalman/kalman_hls/solution1/sim/verilog/xsim.dir/kalman_hw_update/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/kalman/kalman/kalman_hls/solution1/sim/verilog/webtalk.log
+# Journal file: C:/kalman/kalman/kalman_hls/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/kalman/kalman/kalman_hls/solution1/sim/verilog/xsim.dir/kalman_hw_update/webtalk/xsim_webtalk.tcl -notrace

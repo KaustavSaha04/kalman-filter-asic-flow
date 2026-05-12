@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'kalman_hw_update'
+================================================================
++ General Information: 
+    * Date:           Wed May  6 18:38:24 2026
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        kalman_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+    |              Modules             | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |          |             |            |     |
+    |              & Loops             | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |      FF     |     LUT    | URAM|
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+    |+ kalman_hw_update                |    II|  -0.26|      110|  1.100e+03|         -|      110|     -|       yes|     -|  87 (~0%)|  10699 (~0%)|  18517 (1%)|    -|
+    | + grp_init_kalman_filter_fu_885  |     -|  -6.57|        7|     70.000|         -|        8|     -|       yes|     -|         -|      8 (~0%)|  1519 (~0%)|    -|
+    +----------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+

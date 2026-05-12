@@ -1,0 +1,8 @@
+   Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling matrix.cpp_pre.cpp.tb.cpp
+   Compiling apatb_kalman_hw_update.cpp
+   Compiling kalman_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_kalman_hw_update_util.cpp
+   Compiling kalman.cpp_pre.cpp.tb.cpp
+   Compiling apatb_kalman_hw_update_ir.ll
+   Generating cosim.tv.exe

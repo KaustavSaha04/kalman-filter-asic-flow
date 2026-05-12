@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="kalman_hw_update" xd:componentRef="kalman_hw_update" xd:initiationInterval="110" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="obs_pos" xd:originalName="obs_pos" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(est_pos)" xd:originalName="est_pos" xd:direction="out" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_vld" xd:statusOffset="0x1C" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(est_vel)" xd:originalName="est_vel" xd:direction="out" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_vld" xd:statusOffset="0x2C" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="110" xd:worst-case="110" xd:average-case="110"/>
+  <xd:resourceEstimates xd:LUT="18517" xd:FF="10699" xd:BRAM="0" xd:DSP="87"/>
+</xd:acceleratorMap>

@@ -1,0 +1,32 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../matrix.cpp in debug mode
+   Compiling ../../../../kalman.cpp in debug mode
+   Generating csim.exe
+Step 0 - estimated position: 351.867676
+Step 0 - estimated velocity: 5175.781250
+Step 1 - estimated position: 1172.680603
+Step 1 - estimated velocity: 734.037384
+Step 2 - estimated position: 56.872238
+Step 2 - estimated velocity: -151.591385
+Step 3 - estimated position: 2.331985
+Step 3 - estimated velocity: -138.188110
+Step 4 - estimated position: 4.731964
+Step 4 - estimated velocity: 10.635223
+Step 5 - estimated position: 5.683060
+Step 5 - estimated velocity: 2.785004
+Step 6 - estimated position: 6.334717
+Step 6 - estimated velocity: 1.552628
+Step 7 - estimated position: 7.149155
+Step 7 - estimated velocity: 1.167023
+Step 8 - estimated position: 8.055832
+Step 8 - estimated velocity: 1.033203
+Step 9 - estimated position: 9.015854
+Step 9 - estimated velocity: 0.995621
+
+Final Result:
+estimated position: 9.015854
+estimated velocity: 0.995621
+OK
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
