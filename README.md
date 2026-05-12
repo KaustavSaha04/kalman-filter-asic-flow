@@ -55,3 +55,80 @@ Inside the OpenLane Docker/container environment:
 
 ```bash
 ./flow.tcl -interactive
+package require openlane 0.9
+prep -design <design_name>
+
+run_synthesis
+run_floorplan
+run_placement
+run_cts
+run_routing
+run_magic
+run_magic_spice_export
+run_magic_drc
+run_lvs
+```
+
+**Replace `<design_name>` with the top-level design entity name.**
+
+---
+
+## Viewing the Layout in Magic
+
+The generated physical layout can be viewed using Magic VLSI.
+
+### GDS-based Layout Viewing
+
+```bash
+magic -T <tech_file>.tech <layout_file>.gds
+```
+
+### DEF-based Layout Viewing
+
+```bash
+magic -T <tech_file>.tech
+```
+
+Then inside the Magic terminal:
+
+```tcl
+def read <design>.def
+```
+
+These views can be used to inspect:
+
+- floorplanning,
+- standard-cell placement,
+- routing,
+- clock-tree insertion,
+- power distribution,
+- and final layout verification.
+
+---
+
+## Final Signoff Artifacts
+
+Important final signoff outputs retained in the repository include:
+
+- `.def`  
+  Final physical placement and routing description.
+
+- `.lef`  
+  Abstract physical layout representation for integration.
+
+- `.lib`  
+  Timing and power characterization library.
+
+- `.sdf`  
+  Standard Delay Format file for timing back-annotation.
+
+- `.spice`  
+  Extracted transistor-level netlist.
+
+- `.nl.v`  
+  Final synthesized netlist.
+
+- `.pnl.v`  
+  Post-placement and routing netlist.
+
+These artifacts represent the final ASIC implementation outputs generated after synthesis, placement, clock-tree synthesis, routing, extraction, and signoff verification.
